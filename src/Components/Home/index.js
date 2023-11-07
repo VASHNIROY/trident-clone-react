@@ -13,6 +13,10 @@ import {
   HomeMainBoldHeadings,
 } from "./styledComponents";
 import BlogAndArticle from "./Blog&Article";
+import PlayBtnBanner from "./PlaybtnBanner";
+import { AccordionCustomIcon } from "./FAQs";
+import { FAQForm } from "./FAQForm";
+import OurServices from "./OurServices";
 
 const HomePage = () => {
   return (
@@ -68,9 +72,7 @@ const HomePage = () => {
       <div className="home-jobs-main-container">
         <div className="home-jobs-mini-container">
           <div className="home-jobs-content-main-container">
-            <h1 className="home-jobs-available-heading">
-              Jobs Available
-            </h1>
+            <h1 className="home-jobs-available-heading">Jobs Available</h1>
             <HomeMainBoldHeadings className="home-jobs-ready-heading">
               Ready Jobs To Apply On August
             </HomeMainBoldHeadings>
@@ -232,6 +234,32 @@ const HomePage = () => {
                 <h1 className="home-job-card-job-detail-heading">Job Detail</h1>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <PlayBtnBanner />
+      <OurServices />
+      <div className="home-faq-section-main-container">
+        <div className="home-faq-section-mini-container">
+          <FAQForm />
+          <div className="home-faqs-main-container">
+            <HomeSmallSideBlueHeadings style={{ textAlign: "start" }}>
+              FAQs
+            </HomeSmallSideBlueHeadings>
+            <HomeMainBoldHeadings
+              style={{
+                textAlign: "start",
+                paddingLeft: "0",
+                paddingRight: "0",
+              }}
+            >
+              Our Frequently Asked Question
+            </HomeMainBoldHeadings>
+            <p style={{ textAlign: "start" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <AccordionCustomIcon />
           </div>
         </div>
       </div>

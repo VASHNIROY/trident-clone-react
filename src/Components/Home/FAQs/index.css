@@ -1,0 +1,12 @@
+.home-faq-section-accordion-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-faq-section-accordion-header {
+  width: "100%";
+  margin-left: "5%";
+}
