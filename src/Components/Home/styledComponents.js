@@ -17,10 +17,12 @@ export const HomeCommonButton = styled.button`
 export const HomeSmallSideBlueHeadings = styled.p`
   color: #3572ee;
   font-weight: bold;
+  text-align: ${(props) => props.textAlign};
 `;
 
 export const HomeMainBoldHeadings = styled.h1`
   font-weight: 700;
+  text-align: ${(props) => props.textAlign};
   @media screen and (max-width: 700px) {
     font-size: 28px;
     text-align: center;

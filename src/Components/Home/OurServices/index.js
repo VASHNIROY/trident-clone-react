@@ -3,7 +3,10 @@ import {
   HomeMainBoldHeadings,
   HomeSmallSideBlueHeadings,
 } from "../styledComponents";
-import { GrNotes } from "react-icons/gr";
+import { CgNotes } from "react-icons/cg";
+import { FaNetworkWired } from "react-icons/fa6";
+import { FaUsersRays } from "react-icons/fa6";
+import { TbReportSearch } from "react-icons/tb";
 import "./index.css";
 
 const OurServices = () => {
@@ -11,7 +14,9 @@ const OurServices = () => {
     <div className="home-our-services-section">
       <div className="home-our-services-mini-container">
         <div className="home-our-services-description-container">
-          <HomeSmallSideBlueHeadings>Our Services</HomeSmallSideBlueHeadings>
+          <HomeSmallSideBlueHeadings textAlign="start">
+            Our Services
+          </HomeSmallSideBlueHeadings>
           <HomeMainBoldHeadings style={{ padding: "0" }}>
             Precision Placements, Profound Results
           </HomeMainBoldHeadings>
@@ -30,17 +35,56 @@ const OurServices = () => {
         </div>
         <div className="home-our-services-cards-container">
           <div className="home-our-services-double-card-container">
-            <div className="home-our-services-card-container">
-              <div className="home-out-services-card">
-                <div className="home-out-services-card-icon-contianer">
-                  <GrNotes />
-                </div>
-                <div>
-                  <h1>Recruitment</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
+            <div className="home-our-services-card">
+              <div className="home-our-services-card-icon-contianer">
+                <CgNotes className="home-our-services-card-icon" />
+              </div>
+              <div className="home-our-services-card-description-container">
+                <h1 className="home-our-services-card-heading">Recruitment</h1>
+                <p className="home-our-services-card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div className="home-our-services-card">
+              <div className="home-our-services-card-icon-contianer">
+                <FaUsersRays className="home-our-services-card-icon" />
+              </div>
+              <div className="home-our-services-card-description-container">
+                <h1 className="home-our-services-card-heading">
+                  HR OutSourcing
+                </h1>
+                <p className="home-our-services-card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="home-our-services-double-card-container">
+            <div className="home-our-services-card">
+              <div className="home-our-services-card-icon-contianer">
+                <FaNetworkWired className="home-our-services-card-icon" />
+              </div>
+              <div className="home-our-services-card-description-container">
+                <h1 className="home-our-services-card-heading">
+                  Expatriate Services
+                </h1>
+                <p className="home-our-services-card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div className="home-our-services-card">
+              <div className="home-our-services-card-icon-contianer">
+                <TbReportSearch className="home-our-services-card-icon" />
+              </div>
+              <div className="home-our-services-card-description-container">
+                <h1 className="home-our-services-card-heading">
+                  Executive Search
+                </h1>
+                <p className="home-our-services-card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </div>
             </div>
           </div>

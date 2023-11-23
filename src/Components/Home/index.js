@@ -17,13 +17,17 @@ import PlayBtnBanner from "./PlaybtnBanner";
 import { AccordionCustomIcon } from "./FAQs";
 import { FAQForm } from "./FAQForm";
 import OurServices from "./OurServices";
+import CountUp from "./Countup";
+import HomeCarousel from "./HomeCarousel";
 
 const HomePage = () => {
   return (
     <>
       <div className="tailoring-talent-main-container">
-        <HomeSmallSideBlueHeadings>We Serve</HomeSmallSideBlueHeadings>
-        <HomeMainBoldHeadings>
+        <HomeSmallSideBlueHeadings textAlign="center">
+          We Serve
+        </HomeSmallSideBlueHeadings>
+        <HomeMainBoldHeadings textAlign="center">
           Tailoring Talent For Excellence
         </HomeMainBoldHeadings>
         <div className="tailoring-cards-main-container">
@@ -238,6 +242,8 @@ const HomePage = () => {
         </div>
       </div>
       <PlayBtnBanner />
+      <CountUp />
+      <HomeCarousel />
       <OurServices />
       <div className="home-faq-section-main-container">
         <div className="home-faq-section-mini-container">

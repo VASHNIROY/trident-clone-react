@@ -39,10 +39,10 @@
 .footer-personal-details-main-contianer {
   display: flex;
   justify-content: center;
-  width: max-content;
   color: white;
   padding: 2%;
-  width: 273px;
+  width: 33.33%;
+
   font-weight: 500;
 }
 .footer-personal-details-logo-contianer {
@@ -64,10 +64,10 @@
 .footer-personal-details-contianer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
   font-size: 13px;
   margin-left: 4%;
-  width: 100%;
+  width: 80%;
 }
 
 .footer-personal-detail {
