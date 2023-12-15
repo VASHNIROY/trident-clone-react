@@ -224,6 +224,17 @@
   .below-hr-line-main-container {
     flex-direction: column;
   }
+  .footer-logo-main-container {
+    flex-direction: column;
+  }
+  .footer-social-icons-main-container {
+    width: max-content;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-personal-details-main-contianer{
+    width: max-content;
+  }
   .footer-about-srm-main-container {
     display: flex;
     flex-direction: column;

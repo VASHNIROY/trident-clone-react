@@ -4,14 +4,16 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import React, { useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import srmlogo from "../images/srmlogo.jpg";
+import srmlogobg from "../images/srmlogobg.png";
 import "./index.css";
 
 import { BsFillTelephoneFill } from "react-icons/bs";
 const navigation = [
-  { name: "Homepage", href: "#", current: true },
-  { name: "About Us", href: "#", current: false },
+  { name: "Teams", href: "#", current: true },
   { name: "Jobs List", href: "#", current: false },
-  { name: "Pages", href: "#", current: false },
+  { name: "Services", href: "#", current: false },
+  { name: "Pricing", href: "#", current: false },
+  { name: "About Us", href: "#", current: false },
   { name: "Contact Us", href: "#", current: false },
 ];
 
@@ -43,17 +45,17 @@ export default function Navbar() {
     };
   }, []);
   return (
-    <Disclosure as="nav" style={{ backgroundColor: "#2a6fe8" }}>
+    <Disclosure as="nav" style={{ backgroundColor: "#2b72ee" }}>
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="flex flex-1 items-center  sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+            <div className="relative flex h-16 items-center justify-between ">
+              <div className="flex flex-1 items-center  sm:items-stretch sm:justify-start mt-5">
+                <div className="flex flex-shrink-0 items-center ">
                   <img
                     width="100"
                     height="80"
-                    src={srmlogo}
+                    src={srmlogobg}
                     class="attachment-full size-full wp-image-300"
                     alt=""
                     sizes="(max-width: 350px) 100vw, 350px"
@@ -75,38 +77,7 @@ export default function Navbar() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         <div className="nav-item-down-arrow-container">
-                          <div className="d-flex">
-                            {item.name}
-                            {item.name === "About Us" ||
-                            item.name === "Jobs List" ||
-                            item.name === "Pages" ? (
-                              <MdOutlineKeyboardArrowDown className="nav-item-downArrow" />
-                            ) : (
-                              ""
-                            )}
-                          </div>
-                          <ul className="nav-item-dropdown-container">
-                            {item.name === "About Us" ? (
-                              <div className="nav-item-dropdown">
-                                <li>About Us</li>
-                                <li>Team</li>
-                              </div>
-                            ) : item.name === "Jobs List" ? (
-                              <div className="nav-item-dropdown">
-                                <li>Jobs list</li>
-                                <li>Team</li>
-                              </div>
-                            ) : item.name === "Pages" ? (
-                              <div className="nav-item-dropdown">
-                                <li>Pages</li>
-                                <li>Team</li>
-                              </div>
-                            ) : (
-                              <div
-                                style={{ backgroundColor: "transparent" }}
-                              ></div>
-                            )}
-                          </ul>
+                          <div className="d-flex">{item.name}</div>
                         </div>
                       </a>
                     ))}
@@ -130,12 +101,12 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <button
-                className="navbar-contact-btn "
+                className="navbar-contact-btn mt-5 "
                 style={{
                   display: isVisible ? "block" : "none",
                 }}
               >
-                <div className="navbar-contact-btn-inner-contianer">
+                <div className="navbar-contact-btn-inner-contianer ">
                   <BsFillTelephoneFill style={{ color: "white" }} />
                   +123-456-789
                 </div>

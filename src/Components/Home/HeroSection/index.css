@@ -1,0 +1,257 @@
+.home-hero-section-main-container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, #2b72ee 0%, #14397a 100%);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding: 5%;
+  padding-bottom: 0%;
+  text-align: center;
+}
+
+.home-hero-section-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-section-main-heading {
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.home-hero-section-side-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* .home-hero-section-or-span-main-container {
+  height: 30px;
+  width: 30px;
+} */
+
+.home-hero-section-btns-main-container {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.home-hero-section-btns-mini-container {
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.home-hero-section-or-span {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  width: 45px;
+  height: 45px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-herosection-images-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.home-herosectionprofiles {
+  width: 20%;
+  position: absolute;
+  margin-right: 50%;
+  margin-top: 4%;
+}
+
+.home-herosection-main-img {
+  width: 550px;
+  position: relative;
+}
+
+.home-herosection-recruting-container {
+  position: absolute;
+  margin-left: 65%;
+  background-color: #2b72ee;
+  border-radius: 16px;
+  margin-top: 4%;
+  font-weight: bold;
+  width: max-content;
+  padding: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.home-hero-section-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.home-hero-section-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b72ee;
+  width: 90%;
+  text-align: center;
+  padding: 12%;
+  margin-bottom: 10%;
+}
+
+.home-hero-section-card-heading {
+  font-weight: bold;
+}
+
+.home-hero-section-card-arrow-icon1-container {
+  height: 55px;
+  width: 55px;
+  /* position: absolute; */
+  top: 900px;
+  background-color: #14397a;
+  border-radius: 50%;
+  overflow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-section-card-arrow-icon2-container {
+  height: 55px;
+  width: 55px;
+  top: 900px;
+  background-color: #14397a;
+  border-radius: 50%;
+  overflow: none;
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-hero-section-card-arrow-icon3-container {
+  height: 55px;
+  width: 55px;
+  top: 900px;
+  background-color: #14397a;
+  border-radius: 50%;
+  overflow: none;
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-hero-section-card-arrow-icon {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .home-hero-section-btns-mini-container {
+    flex-direction: row;
+  }
+
+  .home-hero-section-or-span {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home-hero-section-cards-container {
+    flex-direction: row;
+  }
+  .home-hero-section-cards-container {
+    margin-top: -5%;
+    z-index: 2;
+    position: relative;
+  }
+  .home-hero-section-card-container {
+    width: 300px;
+    height: 150px;
+    border-top: none;
+    padding: 1%;
+    border: 1px solid white;
+    margin-bottom: 4%;
+  }
+  .home-hero-section-card-arrow-icon1-container {
+    height: 45px;
+    width: 45px;
+  }
+
+  .home-hero-section-card-arrow-icon2-container {
+    height: 45px;
+    width: 45px;
+  }
+  .home-hero-section-card-arrow-icon3-container {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+@media screen and (min-width: 1015px) {
+  .home-hero-section-main-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .home-hero-section-content-container {
+    align-items: flex-start;
+  }
+
+  .home-hero-section-btns-main-container {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 20%;
+  }
+
+  .home-hero-section-btns-mini-container {
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+  }
+
+  .home-hero-section-main-heading {
+    font-size: 70px;
+    text-align: start;
+  }
+  .home-hero-section-para {
+    text-align: start;
+  }
+  .home-herosectionprofiles {
+    width: 10%;
+    margin-right: 30%;
+    margin-top: 2%;
+  }
+  .home-herosection-main-img {
+    width: 1000px;
+    height: 600px;
+  }
+  .home-herosection-recruting-container {
+    margin-left: 25%;
+  }
+  .home-hero-section-cards-container {
+    flex-direction: row;
+  }
+}

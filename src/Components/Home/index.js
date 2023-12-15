@@ -19,11 +19,17 @@ import { FAQForm } from "./FAQForm";
 import OurServices from "./OurServices";
 import CountUp from "./Countup";
 import HomeCarousel from "./HomeCarousel";
+import HomeHeroSection from "./HeroSection";
+import AboutTrident from "./AboutTrident";
+import Whychooseus from "./WhyChooseus";
+import Weserve from "./WeServe";
 
 const HomePage = () => {
   return (
     <>
-      <div className="tailoring-talent-main-container">
+      <HomeHeroSection />
+      <AboutTrident />
+      {/* <div className="tailoring-talent-main-container">
         <HomeSmallSideBlueHeadings textAlign="center">
           We Serve
         </HomeSmallSideBlueHeadings>
@@ -72,7 +78,8 @@ const HomePage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Weserve />
       <div className="home-jobs-main-container">
         <div className="home-jobs-mini-container">
           <div className="home-jobs-content-main-container">
@@ -241,9 +248,10 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <Whychooseus />
       <PlayBtnBanner />
       <CountUp />
-      <HomeCarousel />
+      {/* <HomeCarousel /> */}
       <OurServices />
       <div className="home-faq-section-main-container">
         <div className="home-faq-section-mini-container">

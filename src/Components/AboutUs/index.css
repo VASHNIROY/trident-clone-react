@@ -1,0 +1,55 @@
+.aboutus-mission-vission-cards-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.aboutus-mission-vission-cards-heading-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.aboutus-mission-vission-card-container {
+  background-color: #2b72ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.aboutus-mission-vission-card-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.aboutus-mission-vission-img-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutus-mission-heading {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 701px) {
+  .aboutus-mission-heading {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1015px) {
+  .aboutus-mission-vission-img-main-container {
+    flex-direction: row-reverse;
+  }
+  .aboutus-mission-vission-img {
+    width: 50%;
+  }
+}
