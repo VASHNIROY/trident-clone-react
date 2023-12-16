@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import HomePage from "./Components/Home";
 import JobList from "./Components/JobsList/JobList";
 import Services from "./Components/Services/Services";
+import JobDetail from "./Components/JobDetail/JobDetail";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <Footer /> */}
       {/* <JobList /> */}
-      <Services />
+      {/* <Services /> */}
+      <JobDetail />
     </div>
   );
 }
