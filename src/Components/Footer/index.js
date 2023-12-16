@@ -50,6 +50,8 @@ const Footer = () => {
           </li>
         </div>
       </div>
+
+      
       <hr className="footer-hr-line" />
       <div className="below-hr-line-main-container">
         <div className="footer-about-srm-main-container">
