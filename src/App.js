@@ -11,17 +11,15 @@ import AboutUs from "./Components/AboutUs";
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <HomePage /> */}
-      {/* <Footer /> */}
-      {/* <JobList /> */}
-      {/* <Services /> */}
-      <JobDetail />
+      {" "}
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contactus" element={<HomePage />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/joblist" element={<JobList />} />
+        <Route path="/jobdetails" element={<JobDetail />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </div>
