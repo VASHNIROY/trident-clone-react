@@ -1,0 +1,140 @@
+.team-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-nav-first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b72ee;
+  height: 25vh;
+  width: 100%;
+}
+
+.team-nav-heading {
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+}
+
+.team-our-professional-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  margin-top: 55px;
+}
+
+.team-our-professional-headings-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.team-our-professional-heading {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.team-our-professional-side-heading {
+  color: #3572ee;
+  font-weight: bold;
+}
+
+.team-members-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin: 2%;
+}
+
+.team-members-card-container {
+  padding: 8px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #3572ee;
+  margin: 4% 0% 4% 0%;
+}
+
+.team-member-card-img {
+  width: 90%;
+  position: relative;
+}
+
+.team-members-card-mini-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member-card-name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.team-members-card-tagline {
+  background-color: #2b72ee;
+  position: absolute;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2px 15px 2px 15px;
+}
+
+.team-members-card-social-icons-main-container {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  margin-top: 1%;
+}
+
+.team-members-card-social-icon-container {
+  background-color: #2b72ee;
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-members-card-icon {
+  width: 100%;
+}
+
+@media screen and (min-width: 701px) {
+  .team-our-professional-main-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-nav-heading {
+    font-size: 50px;
+  }
+  .team-our-professional-para-container {
+    width: 50%;
+  }
+  .team-our-professional-main-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .team-our-professional-heading {
+    font-size: 48px;
+  }
+}

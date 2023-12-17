@@ -5,16 +5,17 @@ import React, { useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import srmlogo from "../images/srmlogo.jpg";
 import srmlogobg from "../images/srmlogobg.png";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 import { BsFillTelephoneFill } from "react-icons/bs";
 const navigation = [
-  { name: "Teams", href: "#", current: true },
-  { name: "Jobs List", href: "#", current: false },
-  { name: "Services", href: "#", current: false },
-  { name: "Pricing", href: "#", current: false },
-  { name: "About Us", href: "#", current: false },
-  { name: "Contact Us", href: "#", current: false },
+  { name: "Teams", href: "/team", current: false },
+  { name: "Jobs List", href: "/jobs", current: false },
+  { name: "Services", href: "/services", current: false },
+  { name: "Pricing", href: "/pricing", current: false },
+  { name: "About Us", href: "/aboutus", current: false },
+  { name: "Contact Us", href: "/contactus", current: false },
 ];
 
 function classNames(...classes) {
@@ -50,16 +51,19 @@ export default function Navbar() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between ">
-              <div className="flex flex-1 items-center  sm:items-stretch sm:justify-start mt-5">
+              <div className="flex flex-1 items-center  sm:items-stretch sm:justify-start  navbar-logo-main-container">
                 <div className="flex flex-shrink-0 items-center ">
-                  <img
-                    width="100"
-                    height="80"
-                    src={srmlogobg}
-                    class="attachment-full size-full wp-image-300"
-                    alt=""
-                    sizes="(max-width: 350px) 100vw, 350px"
-                  ></img>
+                  <Link to="/ ">
+                    {" "}
+                    <img
+                      width="100"
+                      height="80"
+                      src={srmlogobg}
+                      class="attachment-full size-full wp-image-300"
+                      alt=""
+                      sizes="(max-width: 350px) 100vw, 350px"
+                    ></img>
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block navbar-items-main-container">
                   <div className="flex space-x-4">

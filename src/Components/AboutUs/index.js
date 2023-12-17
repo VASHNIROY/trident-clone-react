@@ -9,6 +9,11 @@ import "./index.css";
 const AboutUs = () => {
   return (
     <div>
+      <div className="aboutus-nav-first-container">
+        <div className="aboutus-nav-heading-container">
+          <h1 className="aboutus-nav-heading">About Us</h1>
+        </div>
+      </div>
       <AboutTrident />
       <Weserve />
       <div className="aboutus-mission-vission-img-main-container">

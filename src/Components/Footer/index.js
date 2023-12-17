@@ -8,7 +8,7 @@ import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="footer-main-container mt-5">
+    <div className="footer-main-container">
       <div className="footer-logo-main-container">
         <div className="footer-logo-li-container">
           <img

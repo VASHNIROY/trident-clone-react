@@ -83,6 +83,11 @@ const ServicesList = [
 const Services = () => {
   return (
     <div className="services-main-container">
+       <div className="services-nav-first-container">
+        <div className="services-nav-heading-container">
+          <h1 className="services-nav-heading">Services</h1>
+        </div>
+      </div>
       <div className="services-second-main-container">
         <div className="services-second-container">
           <div className="services-second-image-container">
