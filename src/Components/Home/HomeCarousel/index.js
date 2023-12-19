@@ -15,7 +15,7 @@ const data = [
     id: 0,
     icon: <BiSolidQuoteAltRight className="home-carousel-icon" />,
     description:
-      "I had been searching for a new IT role for months with no luck.Trident changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
+      "I had been searching for a new IT role for months with no luck.SRM360 changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
     image: team,
     name: "Venu",
     role: "Software developer",
@@ -24,7 +24,7 @@ const data = [
     id: 1,
     icon: <BiSolidQuoteAltRight className="home-carousel-icon" />,
     description:
-      "I had been searching for a new IT role for months with no luck.Trident changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
+      "I had been searching for a new IT role for months with no luck.SRM360 changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
     image: team,
     name: "Venu",
     role: "Software developer",
@@ -33,7 +33,7 @@ const data = [
     id: 2,
     icon: <BiSolidQuoteAltRight className="home-carousel-icon" />,
     description:
-      "I had been searching for a new IT role for months with no luck.Trident changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
+      "I had been searching for a new IT role for months with no luck.SRM360 changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
     image: team,
     name: "Venu",
     role: "Software developer",

@@ -51,7 +51,6 @@ const Footer = () => {
         </div>
       </div>
 
-      
       <hr className="footer-hr-line" />
       <div className="below-hr-line-main-container">
         <div className="footer-about-srm-main-container">
@@ -103,14 +102,14 @@ const Footer = () => {
             </h1>
             <input
               placeholder="Your Email"
-              className="footer-subscribe-input-ele"
+              className="footer-subscribe-input-ele p-4"
             />
             <button className="footer-subscribe-btn">Subscribe Now</button>
           </div>
         </div>
       </div>
       <p className="mb-5 mt-5">
-        Copyright 2023 © Trident | Powered by Rometheme Studio
+        Copyright 2023 © SRM360 | Powered by Rometheme Studio
       </p>
     </div>
   );

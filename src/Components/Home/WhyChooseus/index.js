@@ -1,13 +1,10 @@
 import "./index.css";
 import boys2 from "../AboutTrident/boys2.svg";
-import { HomeCommonButton, HomeMainBoldHeadings } from "../styledComponents";
-import { IoCall } from "react-icons/io5";
-
-import { FaHandshake } from "react-icons/fa";
+import { HomeMainBoldHeadings } from "../styledComponents";
 
 const Whychooseus = () => {
   return (
-    <div className="home-whychooseus-main-container">
+    <div className="home-whychooseus-main-container mt-5">
       <div className="home-whychooseus-mini-container">
         <div className="home-whychooseus-image-container">
           <img

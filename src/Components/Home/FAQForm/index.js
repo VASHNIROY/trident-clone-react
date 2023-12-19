@@ -2,7 +2,7 @@ import "./index.css";
 
 export function FAQForm() {
   return (
-    <div className="home-faq-form-main-contianer">
+    <div className="home-faq-form-main-contianer mb-5">
       <h1 style={{fontWeight: 'bold', fontSize: '25px', textAlign: 'start', marginLeft: '10%', marginTop: '5%'}}>Have Anything To Ask ?</h1>
       <input
         type="text"

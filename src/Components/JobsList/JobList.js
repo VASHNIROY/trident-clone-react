@@ -10,6 +10,7 @@ import rocket from "../images/rocket-gear-logo.png";
 import falscon from "../images/falcon-security-logo.png";
 import OurServices from "../Home/OurServices";
 import PlayBtnBanner from "../Home/PlaybtnBanner";
+import { Link } from "react-router-dom";
 
 const jobsList = [
   {
@@ -122,7 +123,9 @@ const JobList = () => {
                 </p>
               </div>
               <div className="job-list-card-button-container">
-                <button className="job-list-card-button">Job details</button>
+                <button className="job-list-card-button">
+                  <Link to="/jobdetails">Job details </Link>
+                </button>
               </div>
             </div>
           ))}

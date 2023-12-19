@@ -131,6 +131,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  margin-top: 60px;
 }
 
 .home-jobs-cards-main-container {
@@ -227,17 +228,16 @@
   margin-bottom: 10%;
 }
 
-.home-our-services-section{
+.home-our-services-section {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
 
-.home-our-services-description-container{
+.home-our-services-description-container {
   display: flex;
   flex-direction: column;
 }
-
 
 @media screen and (max-width: 645px) {
   .tailoring-cards-main-container {

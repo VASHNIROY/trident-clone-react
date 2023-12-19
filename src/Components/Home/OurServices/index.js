@@ -11,7 +11,7 @@ import "./index.css";
 
 const OurServices = () => {
   return (
-    <div className="home-our-services-section">
+    <div className="home-our-services-section mb-5">
       <div className="home-our-services-mini-container">
         <div className="home-our-services-description-container">
           <HomeSmallSideBlueHeadings textAlign="start">

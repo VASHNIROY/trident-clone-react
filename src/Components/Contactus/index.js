@@ -1,8 +1,8 @@
-import { FAQForm } from "../Home/FAQForm";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import "./index.css";
+import { ContactusForm } from "../ContactusForm";
 
 const ContactUs = () => {
   return (
@@ -13,7 +13,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="contactus-form-details-main-container">
-        <FAQForm />
+        <ContactusForm />
 
         <div className="home-whychooseuscontactus-main-container">
           <div className="home-whychooseuscontactus-mini-container">

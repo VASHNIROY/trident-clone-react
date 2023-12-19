@@ -200,11 +200,26 @@ const JobDetail = () => {
                   className="job-detail-second-form-input-element"
                   placeholder="Your Email"
                 />
-                <input
-                  type="text"
-                  className="job-detail-second-form-input-element"
-                  placeholder="Subject"
-                />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "max-content",
+                    margin: "0",
+                    alignSelf: "center",
+                  }}
+                >
+                  <lable>Upload Resume</lable>
+                  <input
+                    type="file"
+                    style={{ margin: "0" }}
+                    className="job-detail-second-form-input-element"
+                    placeholder="Resume"
+                  />
+                </div>
+
                 <button className="job-detail-second-form-submit-btn">
                   Apply Now
                 </button>

@@ -10,7 +10,7 @@ import { AiFillCalendar } from "react-icons/ai";
 
 const BlogAndArticle = () => {
   return (
-    <div className="blog-article-main-container">
+    <div className="blog-article-main-container mb-5">
       <div className="blog-article-headings-btn-container">
         <div className="home-blog-article-heading-container">
           <HomeSmallSideBlueHeadings>Blog & Article</HomeSmallSideBlueHeadings>

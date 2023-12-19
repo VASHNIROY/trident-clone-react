@@ -106,7 +106,7 @@ const Team = () => {
             Our professional
           </div>
           <div className="team-our-professional-heading">
-            Meet The Team Behind Trident
+            Meet The Team Behind SRM360
           </div>
         </div>
         <div className="team-our-professional-para-container">

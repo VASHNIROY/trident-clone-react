@@ -76,7 +76,7 @@ const AboutTrident = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="home-abouttirdent-main-container">
+    <div className="home-abouttirdent-main-container mt-5">
       <div className="services-second-container">
         <div className="services-second-image-container">
           <img

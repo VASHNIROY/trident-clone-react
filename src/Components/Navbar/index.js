@@ -81,7 +81,9 @@ export default function Navbar() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         <div className="nav-item-down-arrow-container">
-                          <div className="d-flex">{item.name}</div>
+                          <div className="d-flex" style={{ color: "white" }}>
+                            {item.name}
+                          </div>
                         </div>
                       </a>
                     ))}
@@ -124,7 +126,7 @@ export default function Navbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", color: "white" }}
                   className={classNames(
                     item.current ? " text-white" : " hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"

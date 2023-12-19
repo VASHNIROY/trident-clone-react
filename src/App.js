@@ -7,12 +7,9 @@ import Services from "./Components/Services/Services";
 import JobDetail from "./Components/JobDetail/JobDetail";
 import { Routes, Route } from "react-router-dom";
 import AboutUs from "./Components/AboutUs";
-import Services from "./Components/Services/Services";
 import Team from "./Components/Team";
-import JobList from "./Components/JobsList/JobList";
 import ContactUs from "./Components/Contactus";
 import Pricing from "./Components/Pricing";
-import Template from "./Components/pricingCards";
 
 function App() {
   return (
@@ -27,6 +24,7 @@ function App() {
         <Route path="/jobs" element={<JobList />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/jobdetails" element={<JobDetail />} />
       </Routes>
       <Footer />
     </div>
