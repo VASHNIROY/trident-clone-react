@@ -19,6 +19,7 @@ const PricingCard = ({
       }`}
       style={{
         backgroundColor: "#f4f8ff",
+        width: "30%",
       }}
     >
       {isPopular && (
@@ -28,9 +29,7 @@ const PricingCard = ({
           </span>
         </p>
       )}
-      <h4 className="font-medium text-lg ">
-        {title}
-      </h4>
+      <h4 className="font-medium text-lg ">{title}</h4>
       <span className="mt-5 font-bold text-3xl md:text-4xl xl:text-5xl ">
         {price}
       </span>
@@ -78,7 +77,7 @@ const Pricingcards = () => {
       tagline: "Free",
       title: "Basic Plan",
       price: "Free",
-      description: "Get started with basic features",
+      description: "Get started with basic features It is free now",
       features: ["1 user", "Plan features", "Product support"],
       linkText: "Get started",
       linkUrl: "#",
@@ -106,12 +105,13 @@ const Pricingcards = () => {
   return (
     <main
       id="content"
-      className="priciing-cards-main-container"
+      className="priciing-cards-main-container mb-5"
       role="main"
       style={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        width: "100%",
       }}
     >
       <div className="overflow-hidden">
@@ -120,6 +120,7 @@ const Pricingcards = () => {
           className="mt-6 md:mt-12  sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-3 xl:gap-6 lg:items-center"
           style={{
             display: "flex",
+            width: "100%",
 
             "@media (max-width: 700px)": {
               display: "flex",

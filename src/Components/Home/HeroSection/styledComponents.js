@@ -20,6 +20,7 @@ export const HomeHeroSectionReadmorebtns = styled.div`
   @media screen and (min-width: 1015px) {
     top: 0;
     bottom: 0;
-    width: 30%;
+    width: 40%;
   }
 `;
+

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./JobList.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidTimeFive } from "react-icons/bi";
@@ -12,7 +12,9 @@ import OurServices from "../Home/OurServices";
 import PlayBtnBanner from "../Home/PlaybtnBanner";
 import { Link } from "react-router-dom";
 
-const jobsList = [
+const baseUrl = process.env.REACT_APP_API_DOMAIN_URL;
+
+const dummyJobsList = [
   {
     id: 0,
     logo: financelogo,
@@ -76,6 +78,55 @@ const jobsList = [
 ];
 
 const JobList = () => {
+  const [jobsList, setjobList] = useState([]);
+
+  useEffect(() => {
+    const fetchJobs = async () => {
+      try {
+        console.log("Fetching jobs...");
+        const apiUrl = `${baseUrl}api-job-list`;
+        const options = {
+          method: "GET",
+          headers: {
+            Authorization:
+              "5a544978596d59324d4749355a4749354e3249784e4445784d3251315a546c6a595451314d445a684e47493d",
+          },
+        };
+
+        console.log("Requesting data from the server...");
+        const response = await fetch(apiUrl, options);
+
+        if (!response.ok) {
+          throw new Error(
+            `Server error: ${response.status} - ${response.statusText}`
+          );
+        }
+
+        console.log("Server response received.");
+        const data = await response.json();
+
+        const updatedData = data.data.map((item) => ({
+          jobId: item.job_id,
+          jobLocation: item.job_location,
+          jobLogo: item.job_logo,
+          jobTitle: item.job_title,
+          description: item.shor_description,
+        }));
+
+        console.log("Data received:", data);
+
+        setjobList(updatedData);
+      } catch (error) {
+        console.error("Error fetching jobs:", error);
+      }
+    };
+
+    // Fetch jobs when the component mounts
+    fetchJobs();
+  }, []);
+
+  console.log(jobsList);
+
   return (
     <div className="job-list-main-container">
       <div className="job-list-first-container">
@@ -99,9 +150,9 @@ const JobList = () => {
                 <img
                   alt="financelogo"
                   className="job-list-card-image"
-                  src={eachJob.logo}
+                  src={eachJob.jobLogo}
                 />
-                <h1 className="job-list-card-heading">{eachJob.company}</h1>
+                <h1 className="job-list-card-heading">{eachJob.jobId}</h1>
               </div>
               <div className="job-list-card-hr-container">
                 <hr className="job-list-card-hr" />
@@ -109,22 +160,22 @@ const JobList = () => {
               <div className="job-list-card-details-main-contianer">
                 <div className="job-list-card-location-container">
                   <FaLocationDot className="job-list-card-location-icon" />
-                  <p>{eachJob.location}</p>
+                  <p>{eachJob.jobLocation}</p>
                 </div>
                 <div className="job-list-card-location-container">
                   <BiSolidTimeFive className="job-list-card-location-icon" />
-                  <p>{eachJob.jobType}</p>
+                  <p>Full Time</p>
                 </div>
               </div>
               <div className="job-list-card-description-container">
-                <h1 className="job-list-card-role-name">{eachJob.role}</h1>
+                <h1 className="job-list-card-role-name">{eachJob.jobTitle}</h1>
                 <p className="job-list-card-role-description">
-                  {eachJob.description.substring(0, 70)}...
+                  {eachJob.description}
                 </p>
               </div>
               <div className="job-list-card-button-container">
                 <button className="job-list-card-button">
-                  <Link to="/jobdetails">Job details </Link>
+                  <Link to={`/jobdetails/${eachJob.jobId}`}>Job details </Link>
                 </button>
               </div>
             </div>
@@ -138,3 +189,40 @@ const JobList = () => {
 };
 
 export default JobList;
+
+// {jobsList.map((eachJob) => (
+//   <div className="job-list-card-container" key={eachJob.id}>
+//     <div className="job-list-card-image-heading-container">
+//       <img
+//         alt="financelogo"
+//         className="job-list-card-image"
+//         src={eachJob.logo}
+//       />
+//       <h1 className="job-list-card-heading">{eachJob.company}</h1>
+//     </div>
+//     <div className="job-list-card-hr-container">
+//       <hr className="job-list-card-hr" />
+//     </div>
+//     <div className="job-list-card-details-main-contianer">
+//       <div className="job-list-card-location-container">
+//         <FaLocationDot className="job-list-card-location-icon" />
+//         <p>{eachJob.location}</p>
+//       </div>
+//       <div className="job-list-card-location-container">
+//         <BiSolidTimeFive className="job-list-card-location-icon" />
+//         <p>{eachJob.jobType}</p>
+//       </div>
+//     </div>
+//     <div className="job-list-card-description-container">
+//       <h1 className="job-list-card-role-name">{eachJob.role}</h1>
+//       <p className="job-list-card-role-description">
+//         {eachJob.description.substring(0, 70)}...
+//       </p>
+//     </div>
+//     <div className="job-list-card-button-container">
+//       <button className="job-list-card-button">
+//         <Link to={`/jobdetails/${eachJob.id}`}>Job details </Link>
+//       </button>
+//     </div>
+//   </div>
+// ))}

@@ -3,7 +3,6 @@ import { CgNotes } from "react-icons/cg";
 import {
   FaExpandArrowsAlt,
   FaHandHoldingUsd,
-  FaHandshake,
 } from "react-icons/fa";
 import { FaNetworkWired, FaUsersRays } from "react-icons/fa6";
 import {
@@ -12,7 +11,6 @@ import {
   TbDeviceDesktopAnalytics,
 } from "react-icons/tb";
 import "./Services.css";
-import { FAQForm } from "../Home/FAQForm";
 import {
   HomeCommonButton,
   HomeMainBoldHeadings,
@@ -22,6 +20,7 @@ import { AccordionCustomIcon } from "../Home/FAQs";
 
 import boss from "../images/boss.png";
 import { IoCall } from "react-icons/io5";
+import { ContactusForm } from "../ContactusForm";
 
 const ServicesList = [
   {
@@ -82,7 +81,7 @@ const ServicesList = [
 
 const Services = () => {
   return (
-    <div className="services-main-container">
+    <div className="services-main-container mb-5">
        <div className="services-nav-first-container">
         <div className="services-nav-heading-container">
           <h1 className="services-nav-heading">Services</h1>
@@ -155,7 +154,7 @@ const Services = () => {
       </div>
       <div className="home-faq-section-main-container">
         <div className="home-faq-section-mini-container">
-          <FAQForm />
+          <ContactusForm />
           <div className="home-faqs-main-container">
             <HomeSmallSideBlueHeadings style={{ textAlign: "start" }}>
               FAQs

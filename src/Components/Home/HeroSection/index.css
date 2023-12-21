@@ -209,10 +209,13 @@
   .home-hero-section-main-container {
     display: flex;
     flex-direction: row;
+    padding: 0px;
+    padding-top: 20px;
   }
 
   .home-hero-section-content-container {
     align-items: flex-start;
+    padding: 100px;
   }
 
   .home-hero-section-btns-main-container {
@@ -240,13 +243,16 @@
     text-align: start;
   }
   .home-herosectionprofiles {
-    width: 10%;
+    width: 15%;
+    height: 63px;
     margin-right: 30%;
-    margin-top: 2%;
+    margin-top: 4%;
   }
   .home-herosection-main-img {
-    width: 1000px;
-    height: 600px;
+    width: 834px;
+    height: 725px;
+    margin-bottom: 0px;
+    padding-top: 45px;
   }
   .home-herosection-recruting-container {
     margin-left: 25%;

@@ -17,7 +17,7 @@ const data = [
     description:
       "I had been searching for a new IT role for months with no luck.SRM360 changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
     image: team,
-    name: "Venu",
+    name: "Alex",
     role: "Software developer",
   },
   {
@@ -26,8 +26,8 @@ const data = [
     description:
       "I had been searching for a new IT role for months with no luck.SRM360 changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
     image: team,
-    name: "Venu",
-    role: "Software developer",
+    name: "Chris",
+    role: "UI/UX Designer",
   },
   {
     id: 2,
@@ -35,8 +35,8 @@ const data = [
     description:
       "I had been searching for a new IT role for months with no luck.SRM360 changed everything. Their team not only found me a role that perfectly matched my skill set but also negotiated a fantastic compensation package on my behalf. They truly go above and beyond for their clients.",
     image: team,
-    name: "Venu",
-    role: "Software developer",
+    name: "Moris",
+    role: "Java Developer",
   },
 ];
 

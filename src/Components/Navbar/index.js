@@ -3,8 +3,8 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import React, { useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import srmlogo from "../images/srmlogo.jpg";
-import srmlogobg from "../images/srmlogobg.png";
+import srmlogo from "../images/srm360.png";
+import srmlogobg from "../images/srm360.png";
 import { Link } from "react-router-dom";
 import "./index.css";
 

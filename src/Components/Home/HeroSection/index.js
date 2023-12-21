@@ -1,7 +1,8 @@
 import { HomeMainBoldHeadings } from "../styledComponents";
 import "./index.css";
 import { HomeHeroSectionReadmorebtns } from "./styledComponents";
-import herosectionimg from "../../images/herosection.png";
+// import herosectionimg from "../../images/herosection.png";
+import herosectionimg from "../../images/herosection1.png";
 import herosectionprofiles from "../../images/herosectionprofiles.png";
 import { FaArrowDown } from "react-icons/fa";
 const HomeHeroSection = () => {

@@ -17,14 +17,14 @@ function App() {
       {" "}
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/jobs" element={<JobList />} />
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/jobdetails" element={<JobDetail />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/aboutus" element={<AboutUs />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/team" element={<Team />} />
+        <Route exact path="/jobs" element={<JobList />} />
+        <Route exact path="/contactus" element={<ContactUs />} />
+        <Route exact path="/pricing" element={<Pricing />} />
+        <Route exact path="/jobdetails/:id" element={<JobDetail />} />
       </Routes>
       <Footer />
     </div>

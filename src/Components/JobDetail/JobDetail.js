@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import companylogo from "../images/copywriter-logo.png";
 import "./JobDetail.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidTimeFive } from "react-icons/bi";
 import { GoDotFill } from "react-icons/go";
 import computer from "../images/writing-computer.jpg";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+
+const baseUrl = process.env.REACT_APP_API_DOMAIN_URL;
 
 const jobDetailList = {
   id: 0,
@@ -135,6 +139,93 @@ const jobDetailList = {
 };
 
 const JobDetail = () => {
+  const [jobData, SetJobData] = useState([]);
+  const [FormData, SetFormData] = useState({});
+  const { id } = useParams();
+  useEffect(() => {
+    const FetchData = async () => {
+      const apiUrl = `${baseUrl}api-job-details`;
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "Application/json",
+          Authorization:
+            "5a544978596d59324d4749355a4749354e3249784e4445784d3251315a546c6a595451314d445a684e47493d",
+        },
+        body: JSON.stringify({ job_id: id }),
+      };
+      try {
+        console.log("Fetching for response");
+        const response = await fetch(apiUrl, options);
+        console.log(response);
+        if (response.ok === true) {
+          const data = await response.json();
+
+          console.log("output:", data);
+          const updatedData = {
+            jobBanner: data.data.job_banner,
+            jobId: data.data.job_id,
+            jobLocation: data.data.job_location,
+            jobLogo: data.data.job_logo,
+            jobTitle: data.data.job_title,
+            jobType: data.data.job_type,
+            package: data.data.package,
+            requiredSkills: data.data.requirement_and_skills,
+            responsiblities: data.data.responsibilites,
+          };
+          SetJobData(updatedData);
+        } else {
+          console.error("Error:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error", error);
+      }
+    };
+    FetchData();
+  }, [id]);
+
+  console.log(jobData);
+
+  const SubmitForm = async () => {
+    const apiUrl = `${baseUrl}api-apply-for-job`;
+    const options = {
+      method: "POST",
+      headers: {
+        Authorization:
+          "5a544978596d59324d4749355a4749354e3249784e4445784d3251315a546c6a595451314d445a684e47493d",
+      },
+      body: FormData,
+    };
+    console.log(FormData);
+    try {
+      const response = await fetch(apiUrl, options);
+      if (!response.ok) {
+        console.error("Error:", response.statusText);
+      } else {
+        const data = await response.json();
+        console.log(data);
+      }
+    } catch (error) {
+      console.error("Error", error);
+    }
+  };
+
+  const ApplyJob = (event) => {
+    const { name, value, files } = event.target;
+
+    if (name === "applicant_resume") {
+      SetFormData((prevData) => ({
+        ...prevData,
+        [name]: files[0] || null,
+      }));
+    } else {
+      SetFormData((prevData) => ({
+        ...prevData,
+        [name]: event.target.value,
+      }));
+    }
+  };
+
   return (
     <div className="job-detail-main-container">
       <div className="job-detail-first-container">
@@ -146,13 +237,13 @@ const JobDetail = () => {
             <div className="job-detail-second-job-container">
               <div
                 className="job-detail-job-card-container"
-                key={jobDetailList.id}
+                key={jobData.jobId}
               >
                 <div className="job-detail-job-card-image-heading-container">
                   <img
                     alt="financelogo"
                     className="job-detail-job-card-image"
-                    src={jobDetailList.logo}
+                    src={jobData.jobLogo}
                   />
                   <h1 className="job-detail-job-card-heading">
                     {jobDetailList.company}
@@ -164,11 +255,11 @@ const JobDetail = () => {
                 <div className="job-detail-job-card-details-main-contianer">
                   <div className="job-detail-job-card-location-container">
                     <FaLocationDot className="job-detail-job-card-location-icon" />
-                    <p>{jobDetailList.location}</p>
+                    <p>{jobData.jobLocation}</p>
                   </div>
                   <div className="job-detail-job-card-location-container">
                     <BiSolidTimeFive className="job-detail-job-card-location-icon" />
-                    <p>{jobDetailList.jobType}</p>
+                    <p>{jobData.jobType}</p>
                   </div>
                 </div>
                 <div className="job-detail-job-card-description-container">
@@ -181,7 +272,7 @@ const JobDetail = () => {
                 </div>
                 <div className="job-detail-job-card-button-container">
                   <h1 className="job-detail-job-card-salary-heading">
-                    {jobDetailList.salary}
+                    {jobData.package}
                     <span className="job-detail-job-card-span">/Year</span>
                   </h1>
                 </div>
@@ -193,11 +284,19 @@ const JobDetail = () => {
                 <input
                   type="text"
                   className="job-detail-second-form-input-element"
+                  style={{ color: "black" }}
                   placeholder="Your Name"
+                  name="Name"
+                  value={FormData.Name}
+                  onChange={ApplyJob}
                 />
                 <input
                   type="text"
                   className="job-detail-second-form-input-element"
+                  name="email"
+                  style={{ color: "black" }}
+                  onChange={ApplyJob}
+                  value={FormData.email}
                   placeholder="Your Email"
                 />
                 <div
@@ -215,12 +314,17 @@ const JobDetail = () => {
                   <input
                     type="file"
                     style={{ margin: "0" }}
+                    onChange={ApplyJob}
+                    name="resume"
                     className="job-detail-second-form-input-element"
                     placeholder="Resume"
                   />
                 </div>
 
-                <button className="job-detail-second-form-submit-btn">
+                <button
+                  className="job-detail-second-form-submit-btn"
+                  onClick={SubmitForm}
+                >
                   Apply Now
                 </button>
               </div>

@@ -23,6 +23,7 @@ import HomeHeroSection from "./HeroSection";
 import AboutTrident from "./AboutTrident";
 import Whychooseus from "./WhyChooseus";
 import Weserve from "./WeServe";
+import { ContactusForm } from "../ContactusForm";
 
 const HomePage = () => {
   return (
@@ -253,9 +254,10 @@ const HomePage = () => {
       <CountUp />
       {/* <HomeCarousel /> */}
       <OurServices />
+      <HomeCarousel />
       <div className="home-faq-section-main-container">
         <div className="home-faq-section-mini-container">
-          <FAQForm />
+          <ContactusForm />
           <div className="home-faqs-main-container">
             <HomeSmallSideBlueHeadings style={{ textAlign: "start" }}>
               FAQs
