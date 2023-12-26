@@ -15,7 +15,7 @@ import {
 import BlogAndArticle from "./Blog&Article";
 import PlayBtnBanner from "./PlaybtnBanner";
 import { AccordionCustomIcon } from "./FAQs";
-import { FAQForm } from "./FAQForm";
+import Fade from "react-reveal/Fade";
 import OurServices from "./OurServices";
 import CountUp from "./Countup";
 import HomeCarousel from "./HomeCarousel";
@@ -98,161 +98,176 @@ const HomePage = () => {
             </HomeCommonButton>
           </div>
           <div className="home-jobs-cards-main-container">
-            <div className="home-jobs-cards-mini-container">
-              <div className="home-job-card-container">
-                <div className="home-job-card-image-heading-container">
-                  <img
-                    alt="financelogo"
-                    className="home-job-card-image"
-                    src={financelogo}
-                  />
-                  <h1 className="home-job-card-heading">Net79 Investment</h1>
-                </div>
-                <div className="home-job-card-hr-container">
-                  <hr className="home-job-card-hr" />
-                </div>
-                <div className="home-home-job-card-details-main-contianer">
-                  <div className="home-job-card-location-container">
-                    <FaLocationDot className="home-job-card-location-icon" />
-                    <p>Canada</p>
+            <Fade bottom cascade>
+              <div className="home-jobs-cards-mini-container">
+                <div className="home-job-card-container">
+                  <div className="home-job-card-image-heading-container">
+                    <img
+                      alt="financelogo"
+                      className="home-job-card-image"
+                      src={financelogo}
+                    />
+                    <h1 className="home-job-card-heading">Net79 Investment</h1>
                   </div>
-                  <div className="home-job-card-location-container">
-                    <BiSolidTimeFive className="home-job-card-location-icon" />
-                    <p>Full Time</p>
+                  <div className="home-job-card-hr-container">
+                    <hr className="home-job-card-hr" />
                   </div>
+                  <div className="home-home-job-card-details-main-contianer">
+                    <div className="home-job-card-location-container">
+                      <FaLocationDot className="home-job-card-location-icon" />
+                      <p>Canada</p>
+                    </div>
+                    <div className="home-job-card-location-container">
+                      <BiSolidTimeFive className="home-job-card-location-icon" />
+                      <p>Full Time</p>
+                    </div>
+                  </div>
+                  <h1 className="home-job-card-job-detail-heading">
+                    Job Detail
+                  </h1>
                 </div>
-                <h1 className="home-job-card-job-detail-heading">Job Detail</h1>
+                <div className="home-job-card-container">
+                  <div className="home-job-card-image-heading-container">
+                    <img
+                      alt="financelogo"
+                      className="home-job-card-image"
+                      src={copywriterlogo}
+                    />
+                    <h1 className="home-job-card-heading">Rometheme Studio</h1>
+                  </div>
+                  <div className="home-job-card-hr-container">
+                    <hr className="home-job-card-hr" />
+                  </div>
+                  <div className="home-home-job-card-details-main-contianer">
+                    <div className="home-job-card-location-container">
+                      <FaLocationDot className="home-job-card-location-icon" />
+                      <p>Singapore</p>
+                    </div>
+                    <div className="home-job-card-location-container">
+                      <BiSolidTimeFive className="home-job-card-location-icon" />
+                      <p>Full Time</p>
+                    </div>
+                  </div>
+                  <h1 className="home-job-card-job-detail-heading">
+                    Job Detail
+                  </h1>
+                </div>
+                <div className="home-job-card-container">
+                  <div className="home-job-card-image-heading-container">
+                    <img
+                      alt="financelogo"
+                      className="home-job-card-image"
+                      src={falconsecuritylogo}
+                    />
+                    <h1 className="home-job-card-heading">Merpati Airlane</h1>
+                  </div>
+                  <div className="home-job-card-hr-container">
+                    <hr className="home-job-card-hr" />
+                  </div>
+                  <div className="home-home-job-card-details-main-contianer">
+                    <div className="home-job-card-location-container">
+                      <FaLocationDot className="home-job-card-location-icon" />
+                      <p>Malaysia</p>
+                    </div>
+                    <div className="home-job-card-location-container">
+                      <BiSolidTimeFive className="home-job-card-location-icon" />
+                      <p>Full Time</p>
+                    </div>
+                  </div>
+                  <h1 className="home-job-card-job-detail-heading">
+                    Job Detail
+                  </h1>
+                </div>
               </div>
-              <div className="home-job-card-container">
-                <div className="home-job-card-image-heading-container">
-                  <img
-                    alt="financelogo"
-                    className="home-job-card-image"
-                    src={copywriterlogo}
-                  />
-                  <h1 className="home-job-card-heading">Rometheme Studio</h1>
-                </div>
-                <div className="home-job-card-hr-container">
-                  <hr className="home-job-card-hr" />
-                </div>
-                <div className="home-home-job-card-details-main-contianer">
-                  <div className="home-job-card-location-container">
-                    <FaLocationDot className="home-job-card-location-icon" />
-                    <p>Singapore</p>
+            </Fade>
+            <Fade bottom cascade>
+              <div className="home-jobs-cards-mini-container">
+                <div className="home-job-card-container">
+                  <div className="home-job-card-image-heading-container">
+                    <img
+                      alt="financelogo"
+                      className="home-job-card-image"
+                      src={cletterlogo}
+                    />
+                    <h1 className="home-job-card-heading">Fastnet Provider</h1>
                   </div>
-                  <div className="home-job-card-location-container">
-                    <BiSolidTimeFive className="home-job-card-location-icon" />
-                    <p>Full Time</p>
+                  <div className="home-job-card-hr-container">
+                    <hr className="home-job-card-hr" />
                   </div>
+                  <div className="home-home-job-card-details-main-contianer">
+                    <div className="home-job-card-location-container">
+                      <FaLocationDot className="home-job-card-location-icon" />
+                      <p>Indonesia</p>
+                    </div>
+                    <div className="home-job-card-location-container">
+                      <BiSolidTimeFive className="home-job-card-location-icon" />
+                      <p>Full Time</p>
+                    </div>
+                  </div>
+                  <h1 className="home-job-card-job-detail-heading">
+                    Job Detail
+                  </h1>
                 </div>
-                <h1 className="home-job-card-job-detail-heading">Job Detail</h1>
+                <div className="home-job-card-container">
+                  <div className="home-job-card-image-heading-container">
+                    <img
+                      alt="financelogo"
+                      className="home-job-card-image"
+                      src={labyrinthbrainlogo}
+                    />
+                    <h1 className="home-job-card-heading">Brain Software</h1>
+                  </div>
+                  <div className="home-job-card-hr-container">
+                    <hr className="home-job-card-hr" />
+                  </div>
+                  <div className="home-home-job-card-details-main-contianer">
+                    <div className="home-job-card-location-container">
+                      <FaLocationDot className="home-job-card-location-icon" />
+                      <p>Canada</p>
+                    </div>
+                    <div className="home-job-card-location-container">
+                      <BiSolidTimeFive className="home-job-card-location-icon" />
+                      <p>Full Time</p>
+                    </div>
+                  </div>
+                  <h1 className="home-job-card-job-detail-heading">
+                    Job Detail
+                  </h1>
+                </div>
+                <div className="home-job-card-container">
+                  <div className="home-job-card-image-heading-container">
+                    <img
+                      alt="financelogo"
+                      className="home-job-card-image"
+                      src={rocketgearlogo}
+                    />
+                    <h1 className="home-job-card-heading">Rocket Hostinger</h1>
+                  </div>
+                  <div className="home-job-card-hr-container">
+                    <hr className="home-job-card-hr" />
+                  </div>
+                  <div className="home-home-job-card-details-main-contianer">
+                    <div className="home-job-card-location-container">
+                      <FaLocationDot className="home-job-card-location-icon" />
+                      <p>Finland</p>
+                    </div>
+                    <div className="home-job-card-location-container">
+                      <BiSolidTimeFive className="home-job-card-location-icon" />
+                      <p>Full Time</p>
+                    </div>
+                  </div>
+                  <h1 className="home-job-card-job-detail-heading">
+                    Job Detail
+                  </h1>
+                </div>
               </div>
-              <div className="home-job-card-container">
-                <div className="home-job-card-image-heading-container">
-                  <img
-                    alt="financelogo"
-                    className="home-job-card-image"
-                    src={falconsecuritylogo}
-                  />
-                  <h1 className="home-job-card-heading">Merpati Airlane</h1>
-                </div>
-                <div className="home-job-card-hr-container">
-                  <hr className="home-job-card-hr" />
-                </div>
-                <div className="home-home-job-card-details-main-contianer">
-                  <div className="home-job-card-location-container">
-                    <FaLocationDot className="home-job-card-location-icon" />
-                    <p>Malaysia</p>
-                  </div>
-                  <div className="home-job-card-location-container">
-                    <BiSolidTimeFive className="home-job-card-location-icon" />
-                    <p>Full Time</p>
-                  </div>
-                </div>
-                <h1 className="home-job-card-job-detail-heading">Job Detail</h1>
-              </div>
-            </div>
-            <div className="home-jobs-cards-mini-container">
-              <div className="home-job-card-container">
-                <div className="home-job-card-image-heading-container">
-                  <img
-                    alt="financelogo"
-                    className="home-job-card-image"
-                    src={cletterlogo}
-                  />
-                  <h1 className="home-job-card-heading">Fastnet Provider</h1>
-                </div>
-                <div className="home-job-card-hr-container">
-                  <hr className="home-job-card-hr" />
-                </div>
-                <div className="home-home-job-card-details-main-contianer">
-                  <div className="home-job-card-location-container">
-                    <FaLocationDot className="home-job-card-location-icon" />
-                    <p>Indonesia</p>
-                  </div>
-                  <div className="home-job-card-location-container">
-                    <BiSolidTimeFive className="home-job-card-location-icon" />
-                    <p>Full Time</p>
-                  </div>
-                </div>
-                <h1 className="home-job-card-job-detail-heading">Job Detail</h1>
-              </div>
-              <div className="home-job-card-container">
-                <div className="home-job-card-image-heading-container">
-                  <img
-                    alt="financelogo"
-                    className="home-job-card-image"
-                    src={labyrinthbrainlogo}
-                  />
-                  <h1 className="home-job-card-heading">Brain Software</h1>
-                </div>
-                <div className="home-job-card-hr-container">
-                  <hr className="home-job-card-hr" />
-                </div>
-                <div className="home-home-job-card-details-main-contianer">
-                  <div className="home-job-card-location-container">
-                    <FaLocationDot className="home-job-card-location-icon" />
-                    <p>Canada</p>
-                  </div>
-                  <div className="home-job-card-location-container">
-                    <BiSolidTimeFive className="home-job-card-location-icon" />
-                    <p>Full Time</p>
-                  </div>
-                </div>
-                <h1 className="home-job-card-job-detail-heading">Job Detail</h1>
-              </div>
-              <div className="home-job-card-container">
-                <div className="home-job-card-image-heading-container">
-                  <img
-                    alt="financelogo"
-                    className="home-job-card-image"
-                    src={rocketgearlogo}
-                  />
-                  <h1 className="home-job-card-heading">Rocket Hostinger</h1>
-                </div>
-                <div className="home-job-card-hr-container">
-                  <hr className="home-job-card-hr" />
-                </div>
-                <div className="home-home-job-card-details-main-contianer">
-                  <div className="home-job-card-location-container">
-                    <FaLocationDot className="home-job-card-location-icon" />
-                    <p>Finland</p>
-                  </div>
-                  <div className="home-job-card-location-container">
-                    <BiSolidTimeFive className="home-job-card-location-icon" />
-                    <p>Full Time</p>
-                  </div>
-                </div>
-                <h1 className="home-job-card-job-detail-heading">Job Detail</h1>
-              </div>
-            </div>
+            </Fade>
           </div>
         </div>
       </div>
       <Whychooseus />
       <PlayBtnBanner />
       <CountUp />
-      {/* <HomeCarousel /> */}
       <OurServices />
       <HomeCarousel />
       <div className="home-faq-section-main-container">

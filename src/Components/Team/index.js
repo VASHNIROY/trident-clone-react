@@ -6,7 +6,7 @@ import "./index.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-
+import Fade from "react-reveal/Fade";
 import recruiter1 from "../images/recruiter1.jpg";
 import recruiter2 from "../images/recruiter2.jpg";
 import recruiter3 from "../images/recruiter3.jpg";
@@ -120,226 +120,37 @@ const Team = () => {
       </div>
       <div className="team-members-cards-container ">
         {TeamMembers.map((each) => (
-          <div
-            key={each.id}
-            className="team-members-card-container col-md-3 col-xl-3 "
-          >
-            <div className="team-members-card-mini-container">
-              <img
-                className="team-member-card-img"
-                src={each.image}
-                alt="team-member-card-img"
-              />
-              <div className="team-members-card-tagline">
-                <p>{each.role}</p>
-              </div>
-              <h1 className="team-member-card-name">{each.name}</h1>
-              <div className="team-members-card-social-icons-main-container">
-                <div className="team-members-card-social-icon-container">
-                  <FaFacebook className="team-members-card-icon" />
+          <Fade bottom cascade>
+            {" "}
+            <div
+              key={each.id}
+              className="team-members-card-container col-md-3 col-xl-3 "
+            >
+              <div className="team-members-card-mini-container">
+                <img
+                  className="team-member-card-img"
+                  src={each.image}
+                  alt="team-member-card-img"
+                />
+                <div className="team-members-card-tagline">
+                  <p>{each.role}</p>
                 </div>
-                <div className="team-members-card-social-icon-container">
-                  <FaSquareXTwitter className="team-members-card-icon" />
-                </div>
-                <div className="team-members-card-social-icon-container">
-                  <FaLinkedin className="team-members-card-icon" />
+                <h1 className="team-member-card-name">{each.name}</h1>
+                <div className="team-members-card-social-icons-main-container">
+                  <div className="team-members-card-social-icon-container">
+                    <FaFacebook className="team-members-card-icon" />
+                  </div>
+                  <div className="team-members-card-social-icon-container">
+                    <FaSquareXTwitter className="team-members-card-icon" />
+                  </div>
+                  <div className="team-members-card-social-icon-container">
+                    <FaLinkedin className="team-members-card-icon" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Fade>
         ))}
-        {/* <div className="team-members-card-container  col-md-4 col-xl-3 ">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="team-members-card-container  col-md-4 col-xl-3  ">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="team-members-card-container  col-md-4 col-xl-3 ">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="team-members-card-container   col-md-4 col-xl-3">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="team-members-card-container  col-md-4 col-xl-3 ">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="team-members-card-container  col-md-4 col-xl-3">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="team-members-card-container  col-md-4 col-xl-3 ">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="team-members-card-container  col-md-4 col-xl-3">
-          <div className="team-members-card-mini-container">
-            <img
-              className="team-member-card-img"
-              src={recruiter1}
-              alt="team-member-card-img"
-            />
-            <div className="team-members-card-tagline">
-              <p>Recruiter</p>
-            </div>
-            <h1 className="team-member-card-name">Vashni Roy</h1>
-            <div className="team-members-card-social-icons-main-container">
-              <div className="team-members-card-social-icon-container">
-                <FaFacebook className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaSquareXTwitter className="team-members-card-icon" />
-              </div>
-              <div className="team-members-card-social-icon-container">
-                <FaLinkedin className="team-members-card-icon" />
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
       <PlayBtnBanner />
     </div>

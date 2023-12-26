@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
+import Fade from "react-reveal/Fade";
 
 const apiurl = process.env.REACT_APP_API_DOMAIN_URL;
 
@@ -56,54 +57,56 @@ export function ContactusForm() {
   };
 
   return (
-    <div className="contactus-form-main-contianer">
-      <h1
-        style={{
-          fontWeight: "bold",
-          fontSize: "25px",
-          textAlign: "start",
-          marginLeft: "10%",
-          marginTop: "5%",
-        }}
-      >
-        Have Anything To Ask ?
-      </h1>
-      <input
-        type="text"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        className="contactus-form-input-element"
-        placeholder="Your Name"
-      />
-      <input
-        type="text"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-        className="contactus-form-input-element"
-        placeholder="Your Email"
-      />
-      <input
-        type="text"
-        name="subject"
-        value={formData.subject}
-        onChange={handleChange}
-        className="contactus-form-input-element"
-        placeholder="Subject"
-      />
+    <Fade bottom>
+      <div className="contactus-form-main-contianer">
+        <h1
+          style={{
+            fontWeight: "bold",
+            fontSize: "25px",
+            textAlign: "start",
+            marginLeft: "10%",
+            marginTop: "5%",
+          }}
+        >
+          Have Anything To Ask ?
+        </h1>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          className="contactus-form-input-element"
+          placeholder="Your Name"
+        />
+        <input
+          type="text"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          className="contactus-form-input-element"
+          placeholder="Your Email"
+        />
+        <input
+          type="text"
+          name="subject"
+          value={formData.subject}
+          onChange={handleChange}
+          className="contactus-form-input-element"
+          placeholder="Subject"
+        />
 
-      <textarea
-        style={{ height: "250px" }}
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-        className="contactus-form-input-element mb-3"
-        placeholder="Your message here"
-      />
-      <button onClick={handleSubmit} className="contactus-form-submit-btn">
-        Submit Now
-      </button>
-    </div>
+        <textarea
+          style={{ height: "250px" }}
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          className="contactus-form-input-element mb-3"
+          placeholder="Your message here"
+        />
+        <button onClick={handleSubmit} className="contactus-form-submit-btn">
+          Submit Now
+        </button>
+      </div>
+    </Fade>
   );
 }

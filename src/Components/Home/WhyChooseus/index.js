@@ -1,24 +1,21 @@
 import "./index.css";
 import boys2 from "../AboutTrident/boys2.svg";
 import { HomeMainBoldHeadings } from "../styledComponents";
+import Fade from "react-reveal/Fade";
 
 const Whychooseus = () => {
   return (
     <div className="home-whychooseus-main-container mt-5">
       <div className="home-whychooseus-mini-container">
-        <div className="home-whychooseus-image-container">
-          <img
-            className="homewhychooseus-image"
-            alt="homewhychooseus"
-            src={boys2}
-          />
-          {/* <div className="homewhychooseus-imagecontainer-heading--para-container">
-            <div className="homewhychooseus-imagecontainer-heading-tag">
-              10+ Years
-            </div>
-            <p className="homewhychooseus-image-container-para">Experience</p>
-          </div> */}
-        </div>
+        <Fade left>
+          <div className="home-whychooseus-image-container">
+            <img
+              className="homewhychooseus-image"
+              alt="homewhychooseus"
+              src={boys2}
+            />
+          </div>
+        </Fade>
         <div className="home-whychooseus-content-container">
           <div className="home-whychooseus-content-data-container">
             <div className="pt-4 home-whychooseus-content-data-container-side-heading ">

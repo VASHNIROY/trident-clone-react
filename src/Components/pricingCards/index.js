@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 const PricingCard = ({
   tagline,
@@ -114,25 +115,28 @@ const Pricingcards = () => {
         width: "100%",
       }}
     >
-      <div className="overflow-hidden">
-        {/* grid*/}
-        <div
-          className="mt-6 md:mt-12  sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-3 xl:gap-6 lg:items-center"
-          style={{
-            display: "flex",
-            width: "100%",
+      <Fade left cascade>
+        <div className="overflow-hidden">
+          {/* grid*/}
 
-            "@media (max-width: 700px)": {
+          <div
+            className="mt-6 md:mt-12  sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-3 xl:gap-6 lg:items-center"
+            style={{
               display: "flex",
-              flexDirection: "column",
-            },
-          }}
-        >
-          {pricingOptions.map((option, index) => (
-            <PricingCard key={index} {...option} />
-          ))}
+              width: "100%",
+
+              "@media (max-width: 700px)": {
+                display: "flex",
+                flexDirection: "column",
+              },
+            }}
+          >
+            {pricingOptions.map((option, index) => (
+              <PricingCard key={index} {...option} />
+            ))}
+          </div>
         </div>
-      </div>
+      </Fade>
     </main>
   );
 };
