@@ -13,6 +13,20 @@
   font-size: 60px;
 }
 
+.job-detail-share-icons-main-container {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.job-detail-share-icon {
+  outline: none;
+  border: none;
+}
+
 .job-detail-second-main-container {
   display: flex;
   justify-content: center;

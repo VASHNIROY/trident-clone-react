@@ -20,9 +20,9 @@ const HomeHeroSection = () => {
               Connecting Talent,Building Careers
             </div>
             <p className="home-hero-section-para">
-              Vestibulum sit amet sapien felis. Suspendisse fermentum purus quis
-              quam lacinia, id placerat lacus blandit. In hac habitasse platea
-              dictumst.
+              SRM360 Consulting: Premier IT services with on-time, on-budget
+              solutions and top-notch execution, consistently exceeding client
+              expectations.
             </p>
             <div className="home-hero-section-btns-main-container">
               <div className="home-hero-section-btns-mini-container">
@@ -58,21 +58,25 @@ const HomeHeroSection = () => {
       </div>
       <div className="home-hero-section-cards-container">
         <div className="home-hero-section-card-container">
-          <h1 className="home-hero-section-card-heading">Expert Agent</h1>
+          <h1 className="home-hero-section-card-heading">STAFF AUGMENTATION</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div className="home-hero-section-card-arrow-icon1-container">
             <FaArrowDown className="home-hero-section-card-arrow-icon" />
           </div>
         </div>
         <div className="home-hero-section-card-container">
-          <h1 className="home-hero-section-card-heading">Quality Standard</h1>
+          <h1 className="home-hero-section-card-heading">
+            PROJECT TEAM STAFFING
+          </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div className="home-hero-section-card-arrow-icon2-container">
             <FaArrowDown className="home-hero-section-card-arrow-icon" />
           </div>
         </div>
         <div className="home-hero-section-card-container">
-          <h1 className="home-hero-section-card-heading">Certified Method</h1>
+          <h1 className="home-hero-section-card-heading">
+            DIRECT HIRE PLACEMENT
+          </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div className="home-hero-section-card-arrow-icon3-container">
             <FaArrowDown className="home-hero-section-card-arrow-icon" />

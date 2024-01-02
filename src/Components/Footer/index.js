@@ -2,6 +2,7 @@ import "./index.css";
 import srmlogo from "../images/srmlogo.jpg";
 import { BsTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoLogoFacebook } from "react-icons/io5";
 import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
@@ -27,7 +28,7 @@ const Footer = () => {
             </div>
             <div className="footer-personal-details-contianer">
               <p>Phone Number</p>
-              <p className="footer-personal-detail">+123-456-789</p>
+              <p className="footer-personal-detail">+91 9966992207</p>
             </div>
           </li>
           <li className="footer-personal-details-main-contianer">
@@ -36,7 +37,7 @@ const Footer = () => {
             </div>
             <div className="footer-personal-details-contianer">
               <p>Our Email</p>
-              <p className="footer-personal-detail">Hello@awesome.com</p>
+              <p className="footer-personal-detail">hr@srm360consulting.com</p>
             </div>
           </li>
           <li className="footer-personal-details-main-contianer">
@@ -45,7 +46,9 @@ const Footer = () => {
             </div>
             <div className="footer-personal-details-contianer">
               <p>Office Address</p>
-              <p className="footer-personal-detail">Gachibowli,Hyderabad</p>
+              <p className="footer-personal-detail">
+                Cyber Space Building, 5th Floor, Madhapur Hi-Tech City, 500081
+              </p>
             </div>
           </li>
         </div>
@@ -57,9 +60,9 @@ const Footer = () => {
           <div className="footer-about-srm-contianer ">
             <h1 className="footer-about-heading">About SRM360</h1>
             <p>
-              Esse irure cillum aliquip dolore ad cillum. Elit laboris ea quis
-              exercitation. Ex elit laboris commodo cillum do sunt culpa culpa
-              ex.
+              SRM360 Consulting is a Premier IT services with on-time, on-budget
+              solutions and top-notch execution, consistently exceeding client
+              expectations.
             </p>
             <div className="footer-social-media-icons-main-container">
               <div className="footer-social-media-icon-container">
@@ -76,11 +79,48 @@ const Footer = () => {
           <div className="footer-about-main-container">
             <h1 className="footer-about-heading">Useful Link</h1>
             <ul className="footer-useful-link-ul">
-              <li className="footer-useful-link-li">{">"} About Us</li>
-              <li className="footer-useful-link-li">{">"} Job List</li>
-              <li className="footer-useful-link-li">{">"} FAQs</li>
-              <li className="footer-useful-link-li">{">"} Team</li>
-              <li className="footer-useful-link-li">{">"} Contact Us</li>
+              <li className="footer-useful-link-li">
+                {">"}{" "}
+                <Link
+                  to="/aboutus"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  About Us{" "}
+                </Link>
+              </li>
+              <li className="footer-useful-link-li">
+                {">"}{" "}
+                <Link
+                  to="/jobs"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Job List{" "}
+                </Link>{" "}
+              </li>
+              <li className="footer-useful-link-li">
+                {">"}{" "}
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                  FAQs{" "}
+                </Link>
+              </li>
+              <li className="footer-useful-link-li">
+                {">"}{" "}
+                <Link
+                  to="/team"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Team{" "}
+                </Link>
+              </li>
+              <li className="footer-useful-link-li">
+                {">"}{" "}
+                <Link
+                  to="/contactus"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Contact Us{" "}
+                </Link>{" "}
+              </li>
             </ul>
           </div>
         </div>

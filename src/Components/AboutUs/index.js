@@ -28,11 +28,9 @@ const AboutUs = () => {
               <FaEye className="aboutus-mission-vission-card-icon" />
               <h1 className="aboutus-mission-heading">Our Vision</h1>
               <p>
-                Proin aliquam dapibus nulla, ac varius elit sollicitudin id.
-                Donec eleifend lorem vel malesuada imperdiet. Integer tempor
-                tellus sapien, finibus vehicula dolor pharetra at. In et erat
-                sed elit ultrices sodales id nec neque. Quisque blandit quam
-                dapibus risus gravida tristique.
+                A decade of global expertise in tech, sales, and marketing
+                recruitment. We're your ideal partner for career moves and for
+                companies seeking top-tier talent.
               </p>
             </div>
           </div>
@@ -42,11 +40,11 @@ const AboutUs = () => {
               <FaEye className="aboutus-mission-vission-card-icon" />
               <h1 className="aboutus-mission-heading">Our Mission</h1>
               <p>
-                Proin aliquam dapibus nulla, ac varius elit sollicitudin id.
-                Donec eleifend lorem vel malesuada imperdiet. Integer tempor
-                tellus sapien, finibus vehicula dolor pharetra at. In et erat
-                sed elit ultrices sodales id nec neque. Quisque blandit quam
-                dapibus risus gravida tristique.
+                SRM360 aims to be the global leader in recruitment solutions,
+                empowering clients to focus on core business competence with an
+                innovative approach. Specializing in recruitment, staff
+                augmentation, solution development, outsourcing, and software
+                development, we redefine consulting for success.
               </p>
             </div>
           </div>

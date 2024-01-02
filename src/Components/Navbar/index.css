@@ -6,29 +6,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
+  align-self: flex-start;
   color: white;
   background-color: #14397a;
-  height: 40px;
+  height: 46px;
+  padding: 12px;
   border-radius: 8px;
-  width: 13%;
+  width: max-content;
+  align-self: center;
+}
+
+.navbar-inner-container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
 }
 
 .navbar-logo-main-container {
   margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar-contact-btn-inner-contianer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: max-content;
 }
 
 .nav-item-down-arrow-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .nav-item-downArrow {
@@ -76,10 +89,10 @@
 }
 
 .navbar-items-main-container {
-  margin-left: 20% !important;
+  margin-left: 0% !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .navbar-logo-main-container {
     margin: 0;
   }

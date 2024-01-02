@@ -19,19 +19,15 @@ const OurServices = () => {
             Our Services
           </HomeSmallSideBlueHeadings>
           <HomeMainBoldHeadings style={{ padding: "0" }}>
-            Precision Placements, Profound Results
+            Discover Excellence in Every Placement
           </HomeMainBoldHeadings>
           <p>
-            Cras semper pharetra dolor in sollicitudin. Vestibulum nunc risus,
-            tempor ac ligula et, hendrerit vestibulum est interdum et malesuada
-            fames ac.
+            Welcome to SRM360 Consulting, where our commitment to precision
+            placements yields profound results. With a focus on delivering
+            exceptional services, we redefine recruitment and HR solutions to
+            elevate your business. Explore our diverse offerings:
           </p>
-          <p>
-            Ante ipsum primis in faucibus. Suspendisse consectetur, leo nec
-            rutrum cursus, est nunc vestibulum lorem, sed facilisis sapien orci
-            vitae diam. Duis rhoncus mauris magna, nec bibendum erat fermentum
-            laoreet. View More
-          </p>
+
           <HomeCommonButton>View More</HomeCommonButton>
         </div>
         <div className="home-our-services-cards-container">

@@ -42,7 +42,7 @@ const ContactUs = () => {
                     <h1 className="home-whychooseuscontactus-point-heading">
                       Phone Number
                     </h1>
-                    <p>+123 456 789</p>
+                    <p>+91 9966992207</p>
                   </div>
                 </div>
                 <div className="home-whychooseuscontactus-point-container">
@@ -55,7 +55,7 @@ const ContactUs = () => {
                     <h1 className="home-whychooseuscontactus-point-heading">
                       Our Email
                     </h1>
-                    <p>SRM360@gmail.com</p>
+                    <p>hr@srm360consulting.com</p>
                   </div>
                 </div>
                 <div className="home-whychooseuscontactus-point-container">
@@ -68,7 +68,10 @@ const ContactUs = () => {
                     <h1 className="home-whychooseuscontactus-point-heading">
                       Address
                     </h1>
-                    <p>+123 456 789</p>
+                    <p>
+                      Cyber Space Building, 5th Floor, Madhapur Hi-Tech City,
+                      500081
+                    </p>
                   </div>
                 </div>
               </div>

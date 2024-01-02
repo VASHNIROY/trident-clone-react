@@ -28,13 +28,16 @@ const AboutTrident = () => {
               Nurturing Talent, Fueling Growth
             </HomeMainBoldHeadings>
             <p className="services-second-content-para">
-              Nullam facilisis quam ac mi vulputate, ac finibus eros molestie.
-              Donec tristique erat et felis cursus, a pretium neque fringilla.
+              Driving excellence and efficiency
             </p>
             <p>
-              Vestibulum sit amet sapien felis. Suspendisse fermentum purus quis
-              quam lacinia, id placerat lacus blandit. In hac habitasse platea
-              dictumst. Nullam hendrerit egestas turpis vel aliquam.
+              SRM360 values integrity, change leadership, excellence, and
+              individual respect. Our success lies in flexible yet rigorous
+              project management. We foster personal and professional growth
+              through innovation, reward excellence, and build trust with
+              exceptional teamwork and business ethics. As your IT partner,
+              SRM360 offers a range of services from Information Systems
+              Strategy to Staff Augmentation.
             </p>
           </div>
 
@@ -76,7 +79,9 @@ const AboutTrident = () => {
                   <p className="services-second-content-data-icon-para">
                     Call us 24/7
                   </p>
-                  <p className="services-second-content-phone">+123 456 789</p>
+                  <p className="services-second-content-phone">
+                    +91 9966992207
+                  </p>
                 </div>
               </div>
             </div>

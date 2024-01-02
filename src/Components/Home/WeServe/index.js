@@ -18,7 +18,7 @@ const Weserve = () => {
         <Fade bottom cascade>
           <div className="tailoring-card">
             <div className="tailoring-card-badge">
-              <p style={{ fontWeight: "bold" }}>1 month training</p>
+              <p style={{ fontWeight: "bold" }}>IT Recruitment</p>
             </div>
             <h1 className="tailoring-card-heading">Develop & Training</h1>
             <p>
@@ -38,7 +38,7 @@ const Weserve = () => {
           </div>
           <div className="tailoring-remain-card">
             <div className="tailoring-card-badge">
-              <p style={{ fontWeight: "bold" }}>Free Couselling </p>
+              <p style={{ fontWeight: "bold" }}>Business Solution</p>
             </div>
             <h1 className="tailoring-card-heading">Develop & Training</h1>
             <p>
@@ -48,7 +48,7 @@ const Weserve = () => {
           </div>
           <div className="tailoring-remain-card">
             <div className="tailoring-card-badge">
-              <p style={{ fontWeight: "bold" }}>Testing By Expert</p>
+              <p style={{ fontWeight: "bold" }}>Best IT Staffing</p>
             </div>
             <h1 className="tailoring-card-heading">Develop & Training</h1>
             <p>

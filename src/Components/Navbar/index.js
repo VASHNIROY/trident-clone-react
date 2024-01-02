@@ -1,9 +1,7 @@
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import React, { useState, useEffect } from "react";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import srmlogo from "../images/srm360.png";
 import srmlogobg from "../images/srm360.png";
 import { Link } from "react-router-dom";
 import "./index.css";
@@ -27,7 +25,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 900) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -45,13 +43,34 @@ export default function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  {
+    /*className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 "*/
+    /*items-center justify-between  */
+    /* sm:items-stretch */
+  }
   return (
-    <Disclosure as="nav" style={{ backgroundColor: "#2b72ee" }}>
+    <Disclosure
+      as="nav"
+      style={{
+        backgroundColor: "#2b72ee",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
-            <div className="relative flex h-16 items-center justify-between ">
-              <div className="flex flex-1 items-center  sm:items-stretch sm:justify-start  navbar-logo-main-container">
+          <div className="navbar-inner-container">
+            <div
+              className="relative flex h-16 "
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+              }}
+            >
+              <div className="flex flex-1 items-center    navbar-logo-main-container">
                 <div className="flex flex-shrink-0 items-center ">
                   <Link to="/ ">
                     {" "}
@@ -81,7 +100,10 @@ export default function Navbar() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         <div className="nav-item-down-arrow-container">
-                          <div className="d-flex" style={{ color: "white" }}>
+                          <div
+                            className="d-flex"
+                            style={{ color: "white", width: "max-content" }}
+                          >
                             {item.name}
                           </div>
                         </div>
@@ -89,6 +111,17 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
+                <button
+                  className="navbar-contact-btn"
+                  style={{
+                    display: isVisible ? "block" : "none",
+                  }}
+                >
+                  <div className="navbar-contact-btn-inner-contianer ">
+                    <BsFillTelephoneFill style={{ color: "white" }} />
+                    +91 9966992207
+                  </div>
+                </button>
               </div>
 
               <div className=" inset-y-0 left-0 flex items-center sm:hidden">
@@ -106,8 +139,8 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <button
-                className="navbar-contact-btn mt-5 "
+              {/* <button
+                className="navbar-contact-btn"
                 style={{
                   display: isVisible ? "block" : "none",
                 }}
@@ -116,7 +149,7 @@ export default function Navbar() {
                   <BsFillTelephoneFill style={{ color: "white" }} />
                   +123-456-789
                 </div>
-              </button>
+              </button> */}
             </div>
           </div>
           <Disclosure.Panel className="sm:hidden fixed inset-y-0 w-64 bg-gray-900 z-30 left-0 ">

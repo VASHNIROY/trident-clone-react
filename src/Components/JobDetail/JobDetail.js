@@ -7,6 +7,18 @@ import { GoDotFill } from "react-icons/go";
 import computer from "../images/writing-computer.jpg";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import {
+  LinkedinShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
+  LinkedinIcon,
+  TwitterShareButton,
+  XIcon,
+  TelegramShareButton,
+  TelegramIcon,
+  PinterestShareButton,
+  PinterestIcon,
+} from "react-share";
 
 const baseUrl = process.env.REACT_APP_API_DOMAIN_URL;
 
@@ -226,10 +238,30 @@ const JobDetail = () => {
     }
   };
 
+  const shareUrl = "www.github.com";
+
   return (
     <div className="job-detail-main-container">
       <div className="job-detail-first-container">
         <h1 className="job-detail-first-heading">Job Detail</h1>
+        <div className="job-detail-share-icons-main-container">
+          <LinkedinShareButton className="job-detail-share-icon" url={shareUrl}>
+            <LinkedinIcon className="job-detail-share-icon" size={42} round />
+          </LinkedinShareButton>
+
+          <WhatsappShareButton url={shareUrl}>
+            <WhatsappIcon size={42} round />
+          </WhatsappShareButton>
+          <TwitterShareButton url={shareUrl}>
+            <XIcon size={42} round />
+          </TwitterShareButton>
+          <TelegramShareButton url={shareUrl}>
+            <TelegramIcon size={42} round />
+          </TelegramShareButton>
+          <PinterestShareButton url={shareUrl}>
+            <PinterestIcon size={42} round />
+          </PinterestShareButton>
+        </div>
       </div>
       <div className="job-detail-second-main-container">
         <div className="job-detail-second-container">

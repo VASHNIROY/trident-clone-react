@@ -25,8 +25,10 @@ const Whychooseus = () => {
               Finding The Right Fit, Every Time
             </HomeMainBoldHeadings>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Choose SRM360 for swift, high-quality solutions tailored to your
+              needs. Our expertise in recruitment, staff augmentation, and
+              software development makes us your trusted partner for efficient
+              goal achievement.
             </p>
           </div>
           <div className="home-whychooseus-points-container">
@@ -36,12 +38,12 @@ const Whychooseus = () => {
               </div>
               <div>
                 <h1 className="home-whychooseus-point-heading">
-                  Profile The Ideal Candidates
+                  Expertise Across Continents
                 </h1>
                 <p>
-                  Phasellus ac ipsum sed elit iaculis dapibus a sed erat.
-                  Aliquam at nisi sed magna laoreet mattis. Etiam vitae
-                  dignissim ligula.
+                  SRM360 has a decade of global recruitment success, connecting
+                  professionals to exciting opportunities and assisting
+                  employers in securing top-tier talent.
                 </p>
               </div>
             </div>
@@ -51,12 +53,11 @@ const Whychooseus = () => {
               </div>
               <div>
                 <h1 className="home-whychooseus-point-heading">
-                  Profile The Ideal Candidates
+                  Optimized Business Partnerships
                 </h1>
                 <p>
-                  Phasellus ac ipsum sed elit iaculis dapibus a sed erat.
-                  Aliquam at nisi sed magna laoreet mattis. Etiam vitae
-                  dignissim ligula.
+                  SRM360 is a Global IT partner for efficient solutions, on-time
+                  delivery, top resources, and business success.s
                 </p>
               </div>
             </div>
@@ -66,12 +67,12 @@ const Whychooseus = () => {
               </div>
               <div>
                 <h1 className="home-whychooseus-point-heading">
-                  Profile The Ideal Candidates
+                  Swift and Quality Solutions
                 </h1>
                 <p>
-                  Phasellus ac ipsum sed elit iaculis dapibus a sed erat.
-                  Aliquam at nisi sed magna laoreet mattis. Etiam vitae
-                  dignissim ligula.
+                  SRM360 is Your reliable partner for swift, high-quality
+                  solutions in recruitment, staff augmentation, solution, and
+                  software development, ensuring efficient goal achievement.
                 </p>
               </div>
             </div>
