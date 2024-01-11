@@ -96,4 +96,13 @@
   .navbar-logo-main-container {
     margin: 0;
   }
+  .navbar-contact-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-contact-btn {
+    display: none;
+  }
 }

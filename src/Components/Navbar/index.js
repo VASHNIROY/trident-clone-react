@@ -8,6 +8,7 @@ import "./index.css";
 
 import { BsFillTelephoneFill } from "react-icons/bs";
 const navigation = [
+  { name: "Home", href: "/", current: false },
   { name: "Teams", href: "/team", current: false },
   { name: "Jobs List", href: "/jobs", current: false },
   { name: "Services", href: "/services", current: false },
@@ -21,28 +22,28 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [isVisible, setIsVisible] = useState(true);
+  // const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 900) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 900) {
+  //       setIsVisible(false);
+  //     } else {
+  //       setIsVisible(true);
+  //     }
+  //   };
 
-    // Initial check on component mount
-    handleResize();
+  //   // Initial check on component mount
+  //   handleResize();
 
-    // Listen for window resize events
-    window.addEventListener("resize", handleResize);
+  //   // Listen for window resize events
+  //   window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   // Clean up the event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   {
     /*className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 "*/
@@ -70,7 +71,7 @@ export default function Navbar() {
                 width: "100%",
               }}
             >
-              <div className="flex flex-1 items-center    navbar-logo-main-container">
+              <div className="flex flex-1 items-center navbar-logo-main-container">
                 <div className="flex flex-shrink-0 items-center ">
                   <Link to="/ ">
                     {" "}
@@ -111,11 +112,21 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
-                <button
+                {/* <button
                   className="navbar-contact-btn"
                   style={{
                     display: isVisible ? "block" : "none",
                   }}
+                >
+                  <div className="navbar-contact-btn-inner-contianer ">
+                    StudyAbroad
+                  </div>
+                </button> */}
+                <button
+                  className="navbar-contact-btn"
+                  // style={{
+                  //   display: isVisible ? "block" : "none",
+                  // }}
                 >
                   <div className="navbar-contact-btn-inner-contianer ">
                     <BsFillTelephoneFill style={{ color: "white" }} />

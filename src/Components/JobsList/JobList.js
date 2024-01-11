@@ -138,7 +138,7 @@ const JobList = () => {
       <div className="job-list-second-container">
         <div className="job-list-second-text-container">
           <div className="job-list-second-heading-container">
-            <h4 className="job-list-second-heading">Jobs Are Available</h4>
+            <h4 className="job-list-second-heading">New Jobs</h4>
             <h1 className="job-list-second-heading-1">
               Job Recommendations You Might Need
             </h1>

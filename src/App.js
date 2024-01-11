@@ -10,6 +10,7 @@ import AboutUs from "./Components/AboutUs";
 import Team from "./Components/Team";
 import ContactUs from "./Components/Contactus";
 import Pricing from "./Components/Pricing";
+import Studyabroad from "./Components/Studyabroad";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/contactus" element={<ContactUs />} />
         <Route exact path="/pricing" element={<Pricing />} />
         <Route exact path="/jobdetails/:id" element={<JobDetail />} />
+        <Route exact path="/studyabroad" element={<Studyabroad />} />
       </Routes>
       <Footer />
     </div>
