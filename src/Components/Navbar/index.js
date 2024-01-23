@@ -17,38 +17,56 @@ const navigation = [
   { name: "Contact Us", href: "/contactus", current: false },
 ];
 
+const mobileNavigation = [
+  { name: "Home", href: "/", current: false },
+  { name: "Teams", href: "/team", current: false },
+  { name: "Jobs List", href: "/jobs", current: false },
+  { name: "Services", href: "/services", current: false },
+  { name: "Pricing", href: "/pricing", current: false },
+  { name: "About Us", href: "/aboutus", current: false },
+  { name: "Contact Us", href: "/contactus", current: false },
+  { name: "Study Abroad", href: "/studyabroad", current: false },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
-  // const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+  const [issidebar, setIssidebar] = useState(false);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 900) {
-  //       setIsVisible(false);
-  //     } else {
-  //       setIsVisible(true);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 900) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    };
 
-  //   // Initial check on component mount
-  //   handleResize();
+    // Initial check on component mount
+    handleResize();
 
-  //   // Listen for window resize events
-  //   window.addEventListener("resize", handleResize);
+    // Listen for window resize events
+    window.addEventListener("resize", handleResize);
 
-  //   // Clean up the event listener when the component unmounts
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   {
     /*className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 "*/
     /*items-center justify-between  */
     /* sm:items-stretch */
+  }
+  {
+    /* mobile disclosuer class names */
+  }
+  {
+    /* sm:hidden fixed inset-y-0 w-64 bg-gray-900 z-30 left-0  */
   }
   return (
     <Disclosure
@@ -64,15 +82,15 @@ export default function Navbar() {
         <>
           <div className="navbar-inner-container">
             <div
-              className="relative flex h-16 "
+              className=""
               style={{
                 display: "flex",
                 justifyContent: "space-between",
                 width: "100%",
               }}
             >
-              <div className="flex flex-1 items-center navbar-logo-main-container">
-                <div className="flex flex-shrink-0 items-center ">
+              <div className="navbar-logo-main-container">
+                <div className="">
                   <Link to="/ ">
                     {" "}
                     <img
@@ -85,7 +103,7 @@ export default function Navbar() {
                     ></img>
                   </Link>
                 </div>
-                <div className="hidden sm:ml-6 sm:block navbar-items-main-container">
+                <div className="hidden navbar-items-main-container">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -112,43 +130,60 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
-                {/* <button
-                  className="navbar-contact-btn"
-                  style={{
-                    display: isVisible ? "block" : "none",
-                  }}
-                >
-                  <div className="navbar-contact-btn-inner-contianer ">
-                    StudyAbroad
+                <div className=" navbar-items-main-container">
+                  <div className="flex space-x-4">
+                    <button
+                      className="navbar-contact-btn"
+                      style={{
+                        display: isVisible ? "block" : "none",
+                      }}
+                    >
+                      <div className="navbar-contact-btn-inner-contianer ">
+                        <Link
+                          to="/studyabroad"
+                          style={{ textDecoration: "none", color: "white" }}
+                        >
+                          StudyAbroad
+                        </Link>
+                      </div>
+                    </button>
+                    <button
+                      className="navbar-contact-btn"
+                      style={{
+                        display: isVisible ? "block" : "none",
+                      }}
+                    >
+                      <div className="navbar-contact-btn-inner-contianer ">
+                        <BsFillTelephoneFill style={{ color: "white" }} />
+                        +91 9966992207
+                      </div>
+                    </button>
                   </div>
-                </button> */}
-                <button
-                  className="navbar-contact-btn"
-                  // style={{
-                  //   display: isVisible ? "block" : "none",
-                  // }}
-                >
-                  <div className="navbar-contact-btn-inner-contianer ">
-                    <BsFillTelephoneFill style={{ color: "white" }} />
-                    +91 9966992207
-                  </div>
-                </button>
+                </div>
               </div>
 
               <div className=" inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button
+                <div
                   style={{ backgroundColor: "#14397a" }}
                   className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 >
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  {issidebar ? (
+                    <XMarkIcon
+                      className="block h-6 w-6"
+                      aria-hidden="true"
+                      onClick={() => setIssidebar(prevState => !prevState)}
+                    />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon
+                      className="block h-6 w-6"
+                      aria-hidden="true"
+                      onClick={() => setIssidebar(prevState => !prevState)}
+                      />
                   )}
-                </Disclosure.Button>
+                </div>
               </div>
               {/* <button
                 className="navbar-contact-btn"
@@ -163,9 +198,10 @@ export default function Navbar() {
               </button> */}
             </div>
           </div>
-          <Disclosure.Panel className="sm:hidden fixed inset-y-0 w-64 bg-gray-900 z-30 left-0 ">
+          {/* Mobile menu*/}
+          <div className="sm:hidden fixed inset-y-0 w-64 bg-gray-900 z-30 left-0">
             <div className="space-y-1 px-4 py-4">
-              {navigation.map((item) => (
+              {mobileNavigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
@@ -181,7 +217,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               ))}
             </div>
-          </Disclosure.Panel>
+          </div>
           <script
             src="https://kit.fontawesome.com/4d46ec0dc8.js"
             crossorigin="anonymous"

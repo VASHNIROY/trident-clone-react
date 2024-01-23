@@ -11,12 +11,13 @@ import Team from "./Components/Team";
 import ContactUs from "./Components/Contactus";
 import Pricing from "./Components/Pricing";
 import Studyabroad from "./Components/Studyabroad";
+import Navbar1 from "./Components/Navbar1";
 
 function App() {
   return (
     <div>
       {" "}
-      <Navbar />
+      <Navbar1 />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/aboutus" element={<AboutUs />} />

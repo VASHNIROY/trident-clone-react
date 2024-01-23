@@ -98,6 +98,8 @@
   }
   .navbar-contact-btn {
     display: none;
+    align-items: flex-start;
+    height: max-content;
   }
 }
 

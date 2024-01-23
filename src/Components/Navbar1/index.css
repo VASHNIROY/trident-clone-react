@@ -1,0 +1,144 @@
+.navbar-sub-container {
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+
+.navbar-main-container {
+  height: 80px;
+  background-color: rgb(43, 114, 238);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-company-logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-logo {
+  width: 100px !important;
+  height: 50px;
+}
+.navbar-menu-icon {
+  display: none;
+  background-color: #14397a;
+  border-radius: 8%;
+  height: 30px;
+  width: 30px;
+}
+
+.nav-elements {
+  right: unset;
+  left: 0;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+.nav-elements ul a:hover {
+  color: #60c2d3;
+  font-weight: 500;
+  position: relative;
+}
+.nav-elements ul a.nav-active {
+  color: #60c2d3;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.nav-active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+.navbar-button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 999px) {
+  .navbar-menu-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: unset;
+    left: -270px;
+    top: 0px;
+    background-color: #14397a;
+    z-index: 999;
+    width: 0px;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.nav-active {
+    width: 270px;
+    left: 0;
+    height: 100vh;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    padding: 13%;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+  .navbar-button-container {
+    flex-direction: column;
+    margin-top: 12%;
+    gap: 10px;
+  }
+  .navbar-contact-btn {
+    padding: 0px;
+  }
+  .nav-elements ul li {
+    margin-right: 50px;
+  }
+  .nav-mobile-block {
+    display: none;
+  }
+}
