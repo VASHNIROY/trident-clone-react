@@ -8,10 +8,10 @@ import Fade from "react-reveal/Fade.js";
 const Weserve = () => {
   return (
     <div className="tailoring-talent-main-container">
-      <HomeSmallSideBlueHeadings textAlign="center">
+      <HomeSmallSideBlueHeadings textalign="center">
         We Serve
       </HomeSmallSideBlueHeadings>
-      <HomeMainBoldHeadings textAlign="center">
+      <HomeMainBoldHeadings textalign="center">
         Tailoring Talent For Excellence
       </HomeMainBoldHeadings>
       <div className="tailoring-cards-main-container">

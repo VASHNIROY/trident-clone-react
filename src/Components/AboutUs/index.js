@@ -4,9 +4,13 @@ import Whychooseus from "../Home/WhyChooseus";
 import { HomeMainBoldHeadings } from "../Home/styledComponents";
 import { FaEye } from "react-icons/fa";
 import aboutusimg from "../images/aboutusimg.jpg";
+import { useEffect } from "react";
 import "./index.css";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="aboutus-nav-first-container">

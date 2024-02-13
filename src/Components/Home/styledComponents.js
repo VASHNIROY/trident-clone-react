@@ -17,7 +17,7 @@ export const HomeCommonButton = styled.button`
 export const HomeSmallSideBlueHeadings = styled.p`
   color: #3572ee;
   font-weight: bold;
-  text-align: ${(props) => props.textAlign};
+  text-align: ${(props) => props.textalign};
 `;
 
 export const HomeMainBoldHeadings = styled.h1`

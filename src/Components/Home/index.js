@@ -22,10 +22,15 @@ import HomeCarousel from "./HomeCarousel";
 import HomeHeroSection from "./HeroSection";
 import AboutTrident from "./AboutTrident";
 import Whychooseus from "./WhyChooseus";
+import { Link } from "react-router-dom";
 import Weserve from "./WeServe";
 import { ContactusForm } from "../ContactusForm";
+import { useEffect } from "react";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HomeHeroSection />
@@ -94,7 +99,7 @@ const HomePage = () => {
               dictumst. Nullam hendrerit egestas turpis vel aliquam.
             </p>
             <HomeCommonButton className="home-jobs-content-button">
-              View All {"->"}
+              <Link to="/jobs"> View All {"->"}</Link>
             </HomeCommonButton>
           </div>
           <div className="home-jobs-cards-main-container">

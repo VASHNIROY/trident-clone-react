@@ -13,12 +13,12 @@ import { RxCross2 } from "react-icons/rx";
 import "./index.css";
 
 const navigation = [
-  { name: "Teams", href: "/team", current: false },
-  { name: "Jobs List", href: "/jobs", current: false },
-  { name: "Services", href: "/services", current: false },
-  { name: "Pricing", href: "/pricing", current: false },
-  { name: "About Us", href: "/aboutus", current: false },
-  { name: "Contact Us", href: "/contactus", current: false },
+  { name: "Teams", href: "/team", current: false, id: 1 },
+  { name: "Jobs List", href: "/jobs", current: false, id: 2 },
+  { name: "Services", href: "/services", current: false, id: 3 },
+  { name: "Pricing", href: "/pricing", current: false, id: 4 },
+  { name: "About Us", href: "/aboutus", current: false, id: 5 },
+  { name: "Contact Us", href: "/contactus", current: false, id: 6 },
 ];
 
 const Navbar1 = () => {
@@ -33,12 +33,15 @@ const Navbar1 = () => {
     <nav className="navbar-main-container">
       <div className="navbar-sub-container">
         <div className="navbar-company-logo" style={{ width: "100px" }}>
-          <img
-            src={srmlogobg}
-            alt="logo"
-            className="nav-logo"
-            style={{ width: "100px" }}
-          />
+          <Link to="/">
+            {" "}
+            <img
+              src={srmlogobg}
+              alt="logo"
+              className="nav-logo"
+              style={{ width: "100px" }}
+            />
+          </Link>
         </div>
         {showNavbar ? (
           <div className="navbar-menu-icon" onClick={handleShowNavbar}>
@@ -52,7 +55,7 @@ const Navbar1 = () => {
         <div className={`nav-elements ${showNavbar && "nav-active"}`}>
           <ul>
             {navigation.map((item) => (
-              <li>
+              <li key={item.id}>
                 <Link to={item.href}>{item.name}</Link>
               </li>
             ))}

@@ -155,6 +155,7 @@ const JobDetail = () => {
   const [FormData, SetFormData] = useState({});
   const { id } = useParams();
   useEffect(() => {
+    window.scrollTo(0, 0);
     const FetchData = async () => {
       const apiUrl = `${baseUrl}api-job-details`;
       const options = {

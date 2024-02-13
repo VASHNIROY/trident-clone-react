@@ -1,5 +1,5 @@
 import "./index.css";
-import srmlogo from "../images/srmlogo.jpg";
+import srmlogo from "../images/srm360.png";
 import { BsTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";

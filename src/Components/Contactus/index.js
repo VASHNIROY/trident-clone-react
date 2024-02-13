@@ -3,8 +3,13 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import "./index.css";
 import { ContactusForm } from "../ContactusForm";
+import { useEffect } from "react";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="contact-us-page-main-container">
       <div className="contact-nav-first-container">
@@ -26,9 +31,12 @@ const ContactUs = () => {
                   Contact Us It's Easy
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
+                  For HR recruitment inquiries, please reach out to us at
+                  hr@srm360consulting.com. If you have queries related to
+                  student visas, kindly contact us at info@srm360consulting.com.
+                  We appreciate your interest and will respond to your emails at
+                  the earliest convenience. Thank you for choosing SRM360
+                  Consulting.
                 </p>
               </div>
               <div className="home-whychooseuscontactus-points-container">

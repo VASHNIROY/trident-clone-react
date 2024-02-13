@@ -1,9 +1,6 @@
 import React from "react";
 import { CgNotes } from "react-icons/cg";
-import {
-  FaExpandArrowsAlt,
-  FaHandHoldingUsd,
-} from "react-icons/fa";
+import { FaExpandArrowsAlt, FaHandHoldingUsd } from "react-icons/fa";
 import { FaNetworkWired, FaUsersRays } from "react-icons/fa6";
 import {
   TbReportSearch,
@@ -21,7 +18,7 @@ import { AccordionCustomIcon } from "../Home/FAQs";
 import boss from "../images/boss.png";
 import { IoCall } from "react-icons/io5";
 import { ContactusForm } from "../ContactusForm";
-
+import { useEffect } from "react";
 const ServicesList = [
   {
     id: 0,
@@ -80,9 +77,12 @@ const ServicesList = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="services-main-container mb-5">
-       <div className="services-nav-first-container">
+      <div className="services-nav-first-container">
         <div className="services-nav-heading-container">
           <h1 className="services-nav-heading">Services</h1>
         </div>

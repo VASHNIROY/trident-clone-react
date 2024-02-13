@@ -82,6 +82,7 @@ const JobList = () => {
   const [jobsList, setjobList] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchJobs = async () => {
       try {
         console.log("Fetching jobs...");
@@ -106,6 +107,8 @@ const JobList = () => {
         console.log("Server response received.");
         const data = await response.json();
 
+        console.log("Data received:", data);
+
         const updatedData = data.data.map((item) => ({
           jobId: item.job_id,
           jobLocation: item.job_location,
@@ -113,8 +116,6 @@ const JobList = () => {
           jobTitle: item.job_title,
           description: item.shor_description,
         }));
-
-        console.log("Data received:", data);
 
         setjobList(updatedData);
       } catch (error) {
@@ -145,43 +146,41 @@ const JobList = () => {
           </div>
         </div>
         <div className="job-list-second-cards-container">
-          {dummyJobsList.map((eachJob) => (
-            <Fade bottom cascade>
-              <div className="job-list-card-container" key={eachJob.id}>
-                <div className="job-list-card-image-heading-container">
-                  <img
-                    alt="financelogo"
-                    className="job-list-card-image"
-                    src={eachJob.logo}
-                  />
-                  <h1 className="job-list-card-heading">{eachJob.company}</h1>
+          {jobsList.map((eachJob) => (
+            <div className="job-list-card-container" key={eachJob.id}>
+              <div className="job-list-card-image-heading-container">
+                <img
+                  alt="financelogo"
+                  className="job-list-card-image"
+                  src={eachJob.jobLogo}
+                />
+                <h1 className="job-list-card-heading">{eachJob.jobId}</h1>
+              </div>
+              <div className="job-list-card-hr-container">
+                <hr className="job-list-card-hr" />
+              </div>
+              <div className="job-list-card-details-main-contianer">
+                <div className="job-list-card-location-container">
+                  <FaLocationDot className="job-list-card-location-icon" />
+                  <p>{eachJob.jobLocation}</p>
                 </div>
-                <div className="job-list-card-hr-container">
-                  <hr className="job-list-card-hr" />
-                </div>
-                <div className="job-list-card-details-main-contianer">
-                  <div className="job-list-card-location-container">
-                    <FaLocationDot className="job-list-card-location-icon" />
-                    <p>{eachJob.location}</p>
-                  </div>
-                  <div className="job-list-card-location-container">
-                    <BiSolidTimeFive className="job-list-card-location-icon" />
-                    <p>{eachJob.jobType}</p>
-                  </div>
-                </div>
-                <div className="job-list-card-description-container">
-                  <h1 className="job-list-card-role-name">{eachJob.role}</h1>
-                  <p className="job-list-card-role-description">
-                    {eachJob.description.substring(0, 70)}...
-                  </p>
-                </div>
-                <div className="job-list-card-button-container">
-                  <button className="job-list-card-button">
-                    <Link to={`/jobdetails/${eachJob.id}`}>Job details </Link>
-                  </button>
+                <div className="job-list-card-location-container">
+                  <BiSolidTimeFive className="job-list-card-location-icon" />
+                  <p>Full Time</p>
                 </div>
               </div>
-            </Fade>
+              <div className="job-list-card-description-container">
+                <h1 className="job-list-card-role-name">{eachJob.jobTitle}</h1>
+                <p className="job-list-card-role-description">
+                  {eachJob.description}
+                </p>
+              </div>
+              <div className="job-list-card-button-container">
+                <button className="job-list-card-button">
+                  <Link to={`/jobdetails/${eachJob.jobId}`}>Job details </Link>
+                </button>
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -228,4 +227,43 @@ export default JobList;
 //       </button>
 //     </div>
 //   </div>
+// ))}
+
+// {dummyJobsList.map((eachJob) => (
+//   <Fade bottom cascade>
+//     <div className="job-list-card-container" key={eachJob.id}>
+//       <div className="job-list-card-image-heading-container">
+//         <img
+//           alt="financelogo"
+//           className="job-list-card-image"
+//           src={eachJob.logo}
+//         />
+//         <h1 className="job-list-card-heading">{eachJob.company}</h1>
+//       </div>
+//       <div className="job-list-card-hr-container">
+//         <hr className="job-list-card-hr" />
+//       </div>
+//       <div className="job-list-card-details-main-contianer">
+//         <div className="job-list-card-location-container">
+//           <FaLocationDot className="job-list-card-location-icon" />
+//           <p>{eachJob.location}</p>
+//         </div>
+//         <div className="job-list-card-location-container">
+//           <BiSolidTimeFive className="job-list-card-location-icon" />
+//           <p>{eachJob.jobType}</p>
+//         </div>
+//       </div>
+//       <div className="job-list-card-description-container">
+//         <h1 className="job-list-card-role-name">{eachJob.role}</h1>
+//         <p className="job-list-card-role-description">
+//           {eachJob.description.substring(0, 70)}...
+//         </p>
+//       </div>
+//       <div className="job-list-card-button-container">
+//         <button className="job-list-card-button">
+//           <Link to={`/jobdetails/${eachJob.id}`}>Job details </Link>
+//         </button>
+//       </div>
+//     </div>
+//   </Fade>
 // ))}

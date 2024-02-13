@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import Weserve from "../Home/WeServe";
 import Whychooseus from "../Home/WhyChooseus";
 import Pricingcards from "../pricingCards";
 import "./index.css";
 
 const Pricing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="pricing-main-container">
       <div className="pricing-nav-first-container">

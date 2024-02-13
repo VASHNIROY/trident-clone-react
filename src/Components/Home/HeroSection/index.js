@@ -26,14 +26,14 @@ const HomeHeroSection = () => {
             </p>
             <div className="home-hero-section-btns-main-container">
               <div className="home-hero-section-btns-mini-container">
-                <HomeHeroSectionReadmorebtns backgroundColor="#2b72ee" top="10">
+                <HomeHeroSectionReadmorebtns backgroundcolor="#2b72ee" top="10">
                   Read More
                 </HomeHeroSectionReadmorebtns>
                 {/* <div className='home-hero-section-or-span-main-container'> */}
                 <span className="home-hero-section-or-span">Or</span>
                 {/* </div> */}
                 <HomeHeroSectionReadmorebtns
-                  backgroundColor="black"
+                  backgroundcolor="black"
                   bottom="10"
                 >
                   Explore More

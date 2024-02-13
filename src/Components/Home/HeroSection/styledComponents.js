@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const HomeHeroSectionReadmorebtns = styled.div`
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${(props) => props.backgroundcolor};
   width: 80%;
   border-radius: 8px;
   height: 50px;
@@ -23,4 +23,3 @@ export const HomeHeroSectionReadmorebtns = styled.div`
     width: 40%;
   }
 `;
-

@@ -16,6 +16,7 @@ import recruiter6 from "../images/recruiter6.jpg";
 import recruiter7 from "../images/recruiter7.jpg";
 import recruiter8 from "../images/recruiter8.jpg";
 import PlayBtnBanner from "../Home/PlaybtnBanner";
+import { useEffect } from "react";
 
 const TeamMembers = [
   {
@@ -93,6 +94,9 @@ const TeamMembers = [
 ];
 
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="team-main-container">
       <div className="team-nav-first-container">
@@ -120,7 +124,7 @@ const Team = () => {
       </div>
       <div className="team-members-cards-container ">
         {TeamMembers.map((each) => (
-          <Fade bottom cascade>
+          <>
             {" "}
             <div
               key={each.id}
@@ -149,7 +153,7 @@ const Team = () => {
                 </div>
               </div>
             </div>
-          </Fade>
+          </>
         ))}
       </div>
       <PlayBtnBanner />
@@ -158,3 +162,8 @@ const Team = () => {
 };
 
 export default Team;
+
+{
+  /* <Fade bottom cascade>
+</Fade> */
+}
