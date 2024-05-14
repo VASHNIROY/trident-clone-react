@@ -5,19 +5,16 @@ import { Link } from "react-router-dom";
 //import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
 
 import { RxHamburgerMenu } from "react-icons/rx";
-import srmlogobg from "../images/srm360.png";
+import srmlogobg from "../images/srmlogobg.png";
 import { BsFillTelephoneFill } from "react-icons/bs";
-
 import { RxCross2 } from "react-icons/rx";
 
 import "./index.css";
 
 const navigation = [
-  { name: "Teams", href: "/team", current: false, id: 1 },
+  { name: "About Us", href: "/aboutus", current: false, id: 5 },
   { name: "Jobs List", href: "/jobs", current: false, id: 2 },
   { name: "Services", href: "/services", current: false, id: 3 },
-  { name: "Pricing", href: "/pricing", current: false, id: 4 },
-  { name: "About Us", href: "/aboutus", current: false, id: 5 },
   { name: "Contact Us", href: "/contactus", current: false, id: 6 },
 ];
 

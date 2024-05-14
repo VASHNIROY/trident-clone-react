@@ -174,14 +174,14 @@ export default function Navbar() {
                     <XMarkIcon
                       className="block h-6 w-6"
                       aria-hidden="true"
-                      onClick={() => setIssidebar(prevState => !prevState)}
+                      onClick={() => setIssidebar((prevState) => !prevState)}
                     />
                   ) : (
                     <Bars3Icon
                       className="block h-6 w-6"
                       aria-hidden="true"
-                      onClick={() => setIssidebar(prevState => !prevState)}
-                      />
+                      onClick={() => setIssidebar((prevState) => !prevState)}
+                    />
                   )}
                 </div>
               </div>

@@ -30,7 +30,7 @@ const dummyJobsList = [
     id: 1,
     logo: c,
     company: "Rometheme Studio",
-    location: "Singapura",
+    location: "Singapore",
     jobType: "Full Time",
     role: "Web Developer",
     description:

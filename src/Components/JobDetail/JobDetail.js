@@ -25,7 +25,7 @@ const baseUrl = process.env.REACT_APP_API_DOMAIN_URL;
 const jobDetailList = {
   id: 0,
   logo: companylogo,
-  location: "Singapura",
+  location: "Singapore",
   jobType: "Full Time",
   company: "Rometheme Studio",
   role: "Frontend Developer",

@@ -1,5 +1,5 @@
 import "./index.css";
-import srmlogo from "../images/srm360.png";
+import srmlogo from "../images/srmlogobg.png";
 import { BsTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -47,7 +47,9 @@ const Footer = () => {
             <div className="footer-personal-details-contianer">
               <p>Office Address</p>
               <p className="footer-personal-detail">
-                Cyber Space Building, 5th Floor, Madhapur Hi-Tech City, 500081
+                Labyrinth Global Solutions, 2nd Floor, People's mart, Yonus
+                Plaza, 16-2-664/1, Government Printing Press Rd, above People
+                Mart, Judges Colony, Malakpet, Hyderabad, Telangana 500024
               </p>
             </div>
           </li>
@@ -88,30 +90,14 @@ const Footer = () => {
                   About Us{" "}
                 </Link>
               </li>
-              <li className="footer-useful-link-li">
-                {">"}{" "}
-                <Link
-                  to="/jobs"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  Job List{" "}
-                </Link>{" "}
-              </li>
+
               <li className="footer-useful-link-li">
                 {">"}{" "}
                 <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   FAQs{" "}
                 </Link>
               </li>
-              <li className="footer-useful-link-li">
-                {">"}{" "}
-                <Link
-                  to="/team"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  Team{" "}
-                </Link>
-              </li>
+
               <li className="footer-useful-link-li">
                 {">"}{" "}
                 <Link
