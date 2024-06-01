@@ -5,6 +5,7 @@ import homeaboutrident from "../../images/homeaboutrident.png";
 import { IoCall } from "react-icons/io5";
 import Fade from "react-reveal/Fade";
 import { FaHandshake } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const AboutTrident = () => {
   return (
@@ -70,7 +71,11 @@ const AboutTrident = () => {
 
           <div className="services-second-content-data-icons-container">
             <div className="services-second-content-data-icon2-container">
-              <HomeCommonButton>Read More</HomeCommonButton>
+              <HomeCommonButton>
+                <Link to="/aboutus" style={{ textDecoration: "none" ,color: "white"}}>
+                  Read More
+                </Link>
+              </HomeCommonButton>
               <div className="services-second-content-data-call-icon-main-container">
                 <div className="services-second-content-data-call-icon-mini-container">
                   <IoCall className="services-second-content-data-icon" />

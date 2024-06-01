@@ -13,9 +13,6 @@ const HomeHeroSection = () => {
       <div className="home-hero-section-main-container">
         <Fade bottom>
           <div className="home-hero-section-content-container">
-            <h1 className="home-hero-section-side-heading">
-              Welcome To SRM360
-            </h1>
             <div className="home-hero-section-main-heading">
               Connecting Talent,Building Careers
             </div>
@@ -59,7 +56,10 @@ const HomeHeroSection = () => {
       <div className="home-hero-section-cards-container">
         <div className="home-hero-section-card-container">
           <h1 className="home-hero-section-card-heading">STAFF AUGMENTATION</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            Enhance your team with our expert professionals, ensuring
+            flexibility and specialized skills exactly when you need them.
+          </p>
           <div className="home-hero-section-card-arrow-icon1-container">
             <FaArrowDown className="home-hero-section-card-arrow-icon" />
           </div>
@@ -68,7 +68,10 @@ const HomeHeroSection = () => {
           <h1 className="home-hero-section-card-heading">
             PROJECT TEAM STAFFING
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            Build dedicated project teams tailored to your needs, ensuring
+            timely and successful project completion.{" "}
+          </p>
           <div className="home-hero-section-card-arrow-icon2-container">
             <FaArrowDown className="home-hero-section-card-arrow-icon" />
           </div>
@@ -77,7 +80,10 @@ const HomeHeroSection = () => {
           <h1 className="home-hero-section-card-heading">
             DIRECT HIRE PLACEMENT
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            Find the perfect fit for your organization with our precise and
+            efficient direct hire solutions.
+          </p>
           <div className="home-hero-section-card-arrow-icon3-container">
             <FaArrowDown className="home-hero-section-card-arrow-icon" />
           </div>

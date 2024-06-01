@@ -9,6 +9,7 @@ import { FaUsersRays } from "react-icons/fa6";
 import { TbReportSearch } from "react-icons/tb";
 import Fade from "react-reveal/Fade";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const OurServices = () => {
   return (
@@ -28,7 +29,14 @@ const OurServices = () => {
             elevate your business. Explore our diverse offerings:
           </p>
 
-          <HomeCommonButton>View More</HomeCommonButton>
+          <HomeCommonButton>
+            <Link
+              to="/contactus"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              View More
+            </Link>
+          </HomeCommonButton>
         </div>
         <div className="home-our-services-cards-container">
           <Fade bottom cascade>
@@ -42,7 +50,9 @@ const OurServices = () => {
                     Recruitment
                   </h1>
                   <p className="home-our-services-card-para">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Find the best talent for your team with our comprehensive
+                    recruitment services, ensuring the perfect match for your
+                    company’s needs.{" "}
                   </p>
                 </div>
               </div>
@@ -55,7 +65,8 @@ const OurServices = () => {
                     HR OutSourcing
                   </h1>
                   <p className="home-our-services-card-para">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Streamline your HR functions with our expert outsourcing
+                    services, allowing you to focus on your core business.{" "}
                   </p>
                 </div>
               </div>
@@ -72,7 +83,9 @@ const OurServices = () => {
                     Expatriate Services
                   </h1>
                   <p className="home-our-services-card-para">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Simplify international assignments with our specialized
+                    expatriate services, covering relocation, compliance, and
+                    support.
                   </p>
                 </div>
               </div>
@@ -85,7 +98,8 @@ const OurServices = () => {
                     Executive Search
                   </h1>
                   <p className="home-our-services-card-para">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Discover top executives to lead your company with our
+                    meticulous and confidential executive search services.
                   </p>
                 </div>
               </div>

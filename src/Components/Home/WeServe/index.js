@@ -20,40 +20,44 @@ const Weserve = () => {
             <div className="tailoring-card-badge">
               <p style={{ fontWeight: "bold" }}>IT Recruitment</p>
             </div>
-            <h1 className="tailoring-card-heading">Develop & Training</h1>
+            <h1 className="tailoring-card-heading">Tech Talent</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              IT Recruitment: We connect you with top IT talent, providing
+              customized recruitment solutions to meet your specific technical
+              requirements.
             </p>
           </div>
           <div className="tailoring-remain-card">
             <div className="tailoring-card-badge">
               <p style={{ fontWeight: "bold" }}>Find Jobs Suit For You</p>
             </div>
-            <h1 className="tailoring-card-heading">Develop & Training</h1>
+            <h1 className="tailoring-card-heading">Perfect Match</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Find Jobs That Suit You: Discover your ideal job with our tailored
+              job matching services, designed to align your skills and career
+              goals with leading employers.
             </p>
           </div>
           <div className="tailoring-remain-card">
             <div className="tailoring-card-badge">
               <p style={{ fontWeight: "bold" }}>Business Solution</p>
             </div>
-            <h1 className="tailoring-card-heading">Develop & Training</h1>
+            <h1 className="tailoring-card-heading">Smart Solutions</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Business Solutions: Optimize your workforce with our comprehensive
+              business solutions, including staffing, project management, and
+              strategic consulting services.
             </p>
           </div>
           <div className="tailoring-remain-card">
             <div className="tailoring-card-badge">
               <p style={{ fontWeight: "bold" }}>Best IT Staffing</p>
             </div>
-            <h1 className="tailoring-card-heading">Develop & Training</h1>
+            <h1 className="tailoring-card-heading">Elite IT</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Best IT Staffing: Experience unparalleled IT staffing services
+              with our expert team, ensuring you get the best professionals to
+              power your technological growth.
             </p>
           </div>
         </Fade>

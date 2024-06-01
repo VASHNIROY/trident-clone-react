@@ -91,12 +91,14 @@ const HomePage = () => {
           <div className="home-jobs-content-main-container">
             <h1 className="home-jobs-available-heading">Jobs Available</h1>
             <HomeMainBoldHeadings className="home-jobs-ready-heading">
-              Ready Jobs To Apply On August
+              Ready Jobs To Apply On July
             </HomeMainBoldHeadings>
             <p>
-              Vestibulum sit amet sapien felis. Suspendisse fermentum purus quis
-              quam lacinia, id placerat lacus blandit. In hac habitasse platea
-              dictumst. Nullam hendrerit egestas turpis vel aliquam.
+              Hot Jobs in July 2024: Explore exciting new opportunities this
+              July! Our latest listings feature top positions across various
+              industries. Whether you're seeking a career change or a new
+              challenge, find your perfect job with us. Start your journey
+              today!
             </p>
             <HomeCommonButton className="home-jobs-content-button">
               <Link to="/jobs"> View All {"->"}</Link>

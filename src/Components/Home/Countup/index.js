@@ -34,7 +34,7 @@ const Countup = () => {
             <ScrollCountUp endValue={200} duration={2} separator="," />
             <p>k+</p>
           </div>
-          <p className="home-countup-counter-para">Resume Added</p>
+          <p className="home-countup-counter-para">Resumes Added</p>
         </div>
       </div>
     </div>

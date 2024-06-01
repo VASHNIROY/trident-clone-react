@@ -79,7 +79,7 @@
   }
   .home-our-services-card-icon-contianer {
     height: 80px;
-    width: 80px;
+    width: 220px;
   }
 
   .home-our-services-card-description-container {
@@ -121,8 +121,8 @@
     width: 100%;
   }
   .home-our-services-card-icon-contianer {
-    height: 80px;
-    width: 160px;
+    height: 43%;
+    width: 75%;
   }
   .home-our-services-card-heading {
     font-size: 20px;
